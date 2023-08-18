@@ -2,25 +2,40 @@ body {
     background-color: rgb(34, 34, 34);
 }
 
-#content a {
-    color: white;
-    border: 5px solid white;
-    padding: 10px;
-    line-height: 50px;
-    border-radius: 20px;
+#content {
+    display: grid;
+    column-gap: 1vw;
+    margin-top: 40vh;
 }
 
-#content h2 {
-    color: white;
-    font-size: 50px;
-    font-weight: 6000;
 
+#title {
+    grid-column-start: 0;
+    grid-column-start: 1;
+    margin: 0 auto;
+}
+
+#title pre {
+    font-size: 20px;
+    color: white;
+}
+
+#nav {
+    grid-column-start: 1;
+    grid-column-start: 2;
+    margin-right: 150px;
 }
 
 #nav a {
     color: white;
     border: 5px solid white;
-    padding: 10px;
-    line-height: 50px;
+    padding: 10px 30px;
+    line-height: 100px;
     border-radius: 20px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#nav a:hover {
+    text-decoration: underline;
 }
