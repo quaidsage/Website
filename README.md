@@ -1,2 +1,2 @@
-# quaidsage.github.io
-Website for quaidsage.com
+# quaidsage.com
+Website for displaying all relevant links for Quaid Sage.
