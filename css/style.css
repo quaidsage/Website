@@ -2,12 +2,14 @@ body {
     background-color: rgb(34, 34, 34);
 }
 
-#content {
-    display: grid;
-    column-gap: 1vw;
-    margin-top: 40vh;
+#page {
+    margin: 30vh auto 0 auto;
 }
 
+#content {
+    display: grid;
+
+}
 
 #title {
     grid-column-start: 0;
@@ -16,26 +18,38 @@ body {
 }
 
 #title pre {
-    font-size: 20px;
+    font-size: 30px;
     color: white;
 }
 
 #nav {
     grid-column-start: 1;
     grid-column-start: 2;
-    margin-right: 150px;
+    margin: 0 auto;
 }
 
 #nav a {
     color: white;
-    border: 5px solid white;
-    padding: 10px 30px;
-    line-height: 100px;
-    border-radius: 20px;
-    font-size: 30px;
     text-decoration: none;
 }
 
-#nav a:hover {
-    text-decoration: underline;
+#nav a pre {
+    width: 210px;
+    font-size: 20px;
+}
+
+#nav a pre:hover span {
+    display: none;
+}
+
+#btn-github-ascii pre:hover:before {
+    content: "\a\00a0_________________\a/                 \\\a|   **github**    |\a \\_________________/";
+}
+
+#btn-linkedin-ascii pre:hover:before {
+    content: "\a\00a0_________________\a/                 \\\a|  **linkedin**   |\a \\_________________/";
+}
+
+#btn-projects-ascii pre:hover:before {
+    content: "\a\00a0_________________\a/                 \\\a|  **projects**   |\a \\_________________/";
 }
