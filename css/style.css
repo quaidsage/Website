@@ -1,36 +1,47 @@
 body {
     background-color: rgb(34, 34, 34);
+    margin: 0;
+    padding: 0;
 }
 
 .no-highlight {
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #page {
-    margin: 30vh auto 0 auto;
+    margin: 0 auto;
 }
 
-#content {
-    display: grid;
-    grid-template-areas:
-    'title nav';
+#header {
+    display: flex;
+    justify-content: top;
+    align-items: top;
+    border-bottom: 1px solid white;
 }
 
 #title {
-    margin: 0 auto;
-    grid-area: title;
+    margin-left: 2vw;
+    justify-content: left;
 }
 
 #title pre {
-    font-size: 30px;
+    font-size: 10px;
     color: white;
+}
+
+#content {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 #nav {
     margin: 0 auto;
-    grid-area: nav;
 }
 
 #nav a {
@@ -59,25 +70,34 @@ body {
     content: "\a\00a0_________________\a/                 \\\a|  **projects**   |\a \\_________________/";
 }
 
-@media only screen and (max-width: 1020px) {
-    /* For mobile phones: */
-    #content {
-        grid-template-areas:
-        'title'
-        'nav';
-    }
+.preload {
+    overflow: hidden;
+}
 
-    #page {
-        margin: 10vh auto 0 auto;
-    }
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    top: 50%;
+    font-size: 30px;
+    color: white;
+}
+
+
+@media only screen and (max-width: 1020px) {
+
   }
 
   @media only screen and (max-width: 820px) {
-    /* For mobile phones: */
-    #title pre {
-        font-size: 18px;
-    }
-    
     #nav a pre {
         width: 155px;
         font-size: 15px;
