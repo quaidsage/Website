@@ -74,7 +74,11 @@ body {
 }
 
 #btn-projects-ascii pre:hover:before {
-    content: "\a\00a0_________________\a/                 \\\a|  **projects**   |\a \\_________________/";
+    content: "\a\00a0_________________\a/                 \\\a|  --projects->   |\a \\_________________/";
+}
+
+#btn-resume-ascii pre:hover:before {
+    content: "\a\00a0_________________\a/                 \\\a|   **résumé**    |\a \\_________________/";
 }
 
 .preload {
