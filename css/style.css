@@ -45,6 +45,10 @@ body {
 
 #nav {
     margin: 0 auto;
+    padding: 0 30px 40px 30px;
+    background-image: url("../resources/img/navBackground.png");
+    background-size: cover;
+    background-position: center;
 }
 
 #nav a {
