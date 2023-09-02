@@ -25,14 +25,9 @@ body {
 }
 
 #title pre {
-    font-size: 23px;
+    font-size: 22px;
     color: white;
-}
-
-#subheading p {
-    font-size: 20px;
-    color: white;
-    text-align: center;
+    margin: 0;
 }
 
 #content {
@@ -46,12 +41,12 @@ body {
 
 #nav {
     margin: 0 auto;
-    padding: 0 30px 40px 30px;
+    padding: 0 30px 50px 30px;
     background-image: url("../resources/img/navBackground.png");
     background-size: cover;
     background-position: center;
     position: relative;
-    left: 25%;
+    left: 26%;
     transition: 0.5s left;
 }
 
@@ -87,7 +82,6 @@ body {
 }
 
 #projects-container {
-    background-color: red;
     position: relative;
     left: 100%;
     transition: 0.4s left;
@@ -95,7 +89,7 @@ body {
 
 #projects-content {
     color: white;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 
