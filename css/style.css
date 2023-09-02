@@ -2,6 +2,7 @@ body {
     background-color: rgb(34, 34, 34);
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .no-highlight {
@@ -50,7 +51,7 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
-    left: 0;
+    left: 25%;
     transition: 0.5s left;
 }
 
@@ -85,6 +86,19 @@ body {
     content: "\00a0_________________\a/                 \\\a|   **résumé**    |\a \\_________________/";
 }
 
+#projects-container {
+    background-color: red;
+    position: relative;
+    left: 100%;
+    transition: 0.4s left;
+}
+
+#projects-content {
+    color: white;
+    font-size: 20px;
+}
+
+
 .preload {
     overflow: hidden;
 }
@@ -113,6 +127,10 @@ body {
         font-size: 25px;
     }
 
+    #projects-content {
+        font-size: 25px;
+    }
+
     #title pre {
         font-size: 35px;
         margin-bottom: 0;
@@ -128,6 +146,10 @@ body {
 @media only screen and (max-width: 820px) {
     #nav a pre {
         font-size: 18px;
+    }
+
+    #projects-content {
+        font-size: 8px;
     }
 
     #title pre {
