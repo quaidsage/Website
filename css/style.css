@@ -49,6 +49,9 @@ body {
     background-image: url("../resources/img/navBackground.png");
     background-size: cover;
     background-position: center;
+    position: relative;
+    left: 0;
+    transition: 0.5s left;
 }
 
 #nav a {
@@ -66,19 +69,20 @@ body {
 }
 
 #btn-github-ascii pre:hover:before {
-    content: "\a\00a0_________________\a/                 \\\a|   **github**    |\a \\_________________/";
+    content: "\00a0_________________\a/                 \\\a|   **github**    |\a \\_________________/";
 }
 
 #btn-linkedin-ascii pre:hover:before {
-    content: "\a\00a0_________________\a/                 \\\a|  **linkedin**   |\a \\_________________/";
+    content: "\00a0_________________\a/                 \\\a|  **linkedin**   |\a \\_________________/";
 }
 
 #btn-projects-ascii pre:hover:before {
-    content: "\a\00a0_________________\a/                 \\\a|  --projects->   |\a \\_________________/";
+    content: "\00a0_________________\a/                 \\\a|  --projects->   |\a \\_________________/";
+    cursor: pointer;
 }
 
 #btn-resume-ascii pre:hover:before {
-    content: "\a\00a0_________________\a/                 \\\a|   **résumé**    |\a \\_________________/";
+    content: "\00a0_________________\a/                 \\\a|   **résumé**    |\a \\_________________/";
 }
 
 .preload {
