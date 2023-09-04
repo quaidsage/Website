@@ -18,6 +18,8 @@ body {
 #header {
     display: flex;
     justify-content: top;
+    z-index: 100;
+    background-color: rgb(34, 34, 34);
 }
 
 #title {
@@ -91,20 +93,74 @@ body {
 
 #projects-container {
     position: relative;
+    height: 800px;
     left: 100%;
     transition: 0.4s left;
 }
 
 #projects-content {
+    margin-top: 80px;
     position: absolute;
-    z-index: 10;
+    width: 1050px;
     height: 100%;
+}
+
+#projects-info {
+    color: white;
+    height: 65%;
+    margin-left: 60px;
+}
+
+#projects-image img {
+    margin: 20px;
+    width: 300px;
+    float: left;
+    height: 300px;
+    border: 4px dotted white;
+}
+
+#projects-desc {
+    margin-top: 20px;
+    float: left;
+
+}
+
+#projects-desc-title {
+    font-size: 24px;
+}
+
+#projects-desc-desc {
+    font-size: 20px;
+}
+
+#projects-control {
+    text-align: center;
 }
 
 #projects-control div {
     color: white;
+    margin: 20px;
     font-size: 20px;
     display: inline-block;
+}
+
+#projects-control div pre:hover span {
+    display: none;
+}
+
+#projects-control-left-ascii pre:hover:before {
+    content: "\00a0__________________\a/                  \\\a|     **<---**     |\a \\__________________/";
+    cursor: pointer;
+}
+
+#projects-control-seeAll-ascii pre:hover:before {
+    content: "\00a0_____________________\a/                     \\\a|     **see all**     |\a \\_____________________/";
+    cursor: pointer;
+}
+
+#projects-control-right-ascii pre:hover:before {
+    content: "\00a0__________________\a/                  \\\a|     **--->**     |\a \\__________________/";
+    cursor: pointer;
 }
 
 #projects-background {
