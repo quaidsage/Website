@@ -1,3 +1,4 @@
+/* Preloader */
 $(window).on("load", function () {
     $(".loader-wrapper").fadeOut("slow");
     $("body").removeClass("preload");
@@ -18,6 +19,7 @@ $(document).on("ready", function () {
         $("#projects-desc-title").text("project: " + proj)
     }
 
+    /* Opens projects tab */
     $("#btn-projects-ascii").on("click", function () {
         if (a == 0) {
             $('#nav-container').css('left', '-25%');
@@ -33,6 +35,8 @@ $(document).on("ready", function () {
         }
 
     });
+
+    /* Increment project tab */
     $("#projects-control-right-ascii").on("click", function () {
         proj++;
         if (proj == 4) {
@@ -41,6 +45,7 @@ $(document).on("ready", function () {
         changeProject(proj);
     });
 
+    /* Decrement project tab */
     $("#projects-control-left-ascii").on("click", function () {
         proj--;
         if (proj == 0) {

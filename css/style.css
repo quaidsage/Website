@@ -1,8 +1,13 @@
+/* Author: Quaid Sage */
 body {
     background-color: rgb(34, 34, 34);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+}
+
+#page {
+    margin: 0 auto;
 }
 
 .no-highlight {
@@ -11,9 +16,11 @@ body {
     user-select: none;
 }
 
-#page {
-    margin: 0 auto;
-}
+/* ======= */
+/* ======= */
+/* Header */
+/* ======= */
+/* ======= */
 
 #header {
     display: flex;
@@ -32,11 +39,20 @@ body {
     margin: 0;
 }
 
+/* ============= */
+/* ============= */
+/* Page Content */
+/* ============= */
+/* ============= */
+
 #content {
     margin-top: 5vh;
     position: relative;
 }
 
+/*                  */
+/* Navigation Menu */
+/*                  */
 #nav-container {
     width: 100%;
     height: 100%;
@@ -60,6 +76,7 @@ body {
     position: absolute;
 }
 
+/* Navigation buttons */
 #nav a {
     color: white;
     text-decoration: none;
@@ -91,6 +108,10 @@ body {
     content: "\00a0_________________\a/                 \\\a|   **résumé**    |\a \\_________________/";
 }
 
+/*              */
+/* Project Tab */
+/*              */
+
 #projects-container {
     position: relative;
     height: 600px;
@@ -98,6 +119,7 @@ body {
     transition: 0.4s left;
 }
 
+/* Project tab content */
 #projects-content {
     margin-top: 80px;
     position: absolute;
@@ -133,6 +155,7 @@ body {
     font-size: 16px;
 }
 
+/* Project tab buttons */
 #projects-control {
     text-align: center;
 }
@@ -170,7 +193,9 @@ body {
     font-size: 22px;
 }
 
-
+/*            */
+/* Preloader */
+/*            */
 .preload {
     overflow: hidden;
 }
@@ -194,7 +219,7 @@ body {
 }
 
 /* Ultra wide screen */
-@media only screen and (min-width: 1930px) {
+@media only screen and (min-width: 2100px) {
 
     #nav a pre {
         font-size: 30px;
@@ -269,6 +294,10 @@ body {
 
     #nav a pre {
         font-size: 18px;
+    }
+
+    #nav-container {
+        position: sticky;
     }
 
     #nav-background {
