@@ -5,6 +5,19 @@ $(window).on("load", function () {
 
 $(document).on("ready", function () {
     var a = 0;
+    var proj = 1;
+
+    /* Change project content function */
+    function changeProject(proj) {
+        var src = "#";
+        var alt = ($("#projects-image img").attr('alt') === ('proj' + proj)) 
+            ? ('proj' + proj - 1) 
+            : ('proj' + proj);
+        $("#projects-image img").attr('src', src);
+        $("#projects-image img").attr('alt', alt);
+        $("#projects-desc-title").text("project: " + proj)
+    }
+
     $("#btn-projects-ascii").on("click", function () {
         if (a == 0) {
             $('#nav-container').css('left', '-25%');
@@ -20,4 +33,22 @@ $(document).on("ready", function () {
         }
 
     });
+    $("#projects-control-right-ascii").on("click", function () {
+        proj++;
+        if (proj == 4) {
+            proj = 1;
+        }
+        changeProject(proj);
+    });
+
+    $("#projects-control-left-ascii").on("click", function () {
+        proj--;
+        if (proj == 0) {
+            proj = 3;
+        }
+        changeProject(proj);
+    });
+
 });
+
+

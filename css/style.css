@@ -108,7 +108,7 @@ body {
 #projects-info {
     color: white;
     height: 55%;
-    margin-left: 60px;
+    margin-left: 50px;
 }
 
 #projects-image img {
@@ -116,7 +116,7 @@ body {
     width: 200px;
     float: left;
     height: 200px;
-    border: 3px dotted white;
+    border: 2px dashed white;
 }
 
 #projects-desc {
@@ -228,7 +228,7 @@ body {
         margin: 20px;
         width: 300px;
         height: 300px;
-        border: 4px dotted white;
+        border: 4px dashed white;
     }
 
     #projects-desc-title {
@@ -314,7 +314,7 @@ body {
         margin: 20px;
         width: 150px;
         height: 150px;
-        border: 3px dotted white;
+        border: 2px dashed white;
     }
 
     #projects-desc-title {
