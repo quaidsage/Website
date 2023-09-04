@@ -93,7 +93,7 @@ body {
 
 #projects-container {
     position: relative;
-    height: 800px;
+    height: 600px;
     left: 100%;
     transition: 0.4s left;
 }
@@ -101,22 +101,22 @@ body {
 #projects-content {
     margin-top: 80px;
     position: absolute;
-    width: 1050px;
+    width: 780px;
     height: 100%;
 }
 
 #projects-info {
     color: white;
-    height: 65%;
+    height: 55%;
     margin-left: 60px;
 }
 
 #projects-image img {
-    margin: 20px;
-    width: 300px;
+    margin: 10px;
+    width: 200px;
     float: left;
-    height: 300px;
-    border: 4px dotted white;
+    height: 200px;
+    border: 3px dotted white;
 }
 
 #projects-desc {
@@ -126,11 +126,11 @@ body {
 }
 
 #projects-desc-title {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 #projects-desc-desc {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #projects-control {
@@ -139,8 +139,8 @@ body {
 
 #projects-control div {
     color: white;
-    margin: 20px;
-    font-size: 20px;
+    margin: 10px;
+    font-size: 16px;
     display: inline-block;
 }
 
@@ -195,6 +195,7 @@ body {
 
 /* Ultra wide screen */
 @media only screen and (min-width: 1930px) {
+
     #nav a pre {
         font-size: 30px;
     }
@@ -205,6 +206,42 @@ body {
 
     #nav-background {
         font-size: 18px;
+    }
+
+    #projects-container {
+        height: 800px;
+    }
+
+    #projects-content {
+        margin-top: 80px;
+        position: absolute;
+        width: 1050px;
+        height: 100%;
+    }
+
+    #projects-info {
+        height: 65%;
+        margin-left: 60px;
+    }
+
+    #projects-image img {
+        margin: 20px;
+        width: 300px;
+        height: 300px;
+        border: 4px dotted white;
+    }
+
+    #projects-desc-title {
+        font-size: 24px;
+    }
+    
+    #projects-desc-desc {
+        font-size: 20px;
+    }
+
+    #projects-control div {
+        margin: 20px;
+        font-size: 20px;
     }
 
     #projects-background {
@@ -255,6 +292,42 @@ body {
 
     #nav-background {
         font-size: 11px;
+    }
+
+    #projects-container {
+        height: 420px;
+    }
+
+    #projects-content {
+        margin-top: 50px;
+        position: absolute;
+        width: 640px;
+        height: 100%;
+    }
+
+    #projects-info {
+        height: 75%;
+        margin-left: 20px;
+    }
+
+    #projects-image img {
+        margin: 20px;
+        width: 150px;
+        height: 150px;
+        border: 3px dotted white;
+    }
+
+    #projects-desc-title {
+        font-size: 18px;
+    }
+    
+    #projects-desc-desc {
+        font-size: 16px;
+    }
+
+    #projects-control div {
+        margin: 5px;
+        font-size: 14px;
     }
 
     #projects-background {
