@@ -95,20 +95,21 @@ body {
 }
 
 #btn-github-ascii pre:hover:before {
-    content: "\00a0_________________\a/                 \\\a|   **github**    |\a \\_________________/";
+    content: "\00a0________________\a/                \\\a|   **github**   |\a \\________________/";
 }
 
-#btn-linkedin-ascii pre:hover:before {
-    content: "\00a0_________________\a/                 \\\a|  **linkedin**   |\a \\_________________/";
+#btn-aboutme-ascii pre:hover:before {
+    content: "\00a0________________\a/                \\\a|  **about me**  |\a \\________________/";
+    cursor: pointer;
 }
 
 #btn-projects-ascii pre:hover:before {
-    content: "\00a0_________________\a/                 \\\a|  --projects->   |\a \\_________________/";
+    content: "\00a0________________\a/                \\\a|  --projects->  |\a \\________________/";
     cursor: pointer;
 }
 
 #btn-resume-ascii pre:hover:before {
-    content: "\00a0_________________\a/                 \\\a|   **résumé**    |\a \\_________________/";
+    content: "\00a0________________\a/                \\\a|   **résumé**   |\a \\________________/";
     cursor: pointer;
 }
 
@@ -276,10 +277,10 @@ body {
 #projects-list-btn-back {
     position: absolute;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     z-index: 10;
-    margin-right: 1300px;
-    margin-top: 100px;
+    margin-right: 650px;
+    margin-top: 110px; 
 }
 
 #projects-list-btn-back-ascii pre:hover span {
@@ -287,7 +288,7 @@ body {
 }
 
 #projects-list-btn-back-ascii pre:hover:before {
-    content: "\00a0_____________________\a/                     \\\a|     **go back**     |\a \\_____________________/";
+    content: "\00a0____________\a/            \\\a|  **<---**  |\a \\____________/";
     cursor: pointer;
 }
 
@@ -401,7 +402,7 @@ body {
 }
 
 /* Mobile */
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1050px) {
 
     #projects-container {
         position: absolute;
