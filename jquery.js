@@ -1,5 +1,7 @@
 /* Preloader */
 $(window).on("load", function () {
+    $("#projects-list-container").hide();
+    $("#projects-container").hide();
     $(".loader-wrapper").fadeOut("slow");
     $("body").removeClass("preload");
 });
@@ -23,14 +25,16 @@ $(document).on("ready", function () {
     $("#btn-projects-ascii").on("click", function () {
         if (a == 0) {
             $('#nav-container').css('left', '-25%');
-            $("<style>#btn-projects-ascii pre:hover:before {content: '\\00a0_________________\\a/                 \\\\\\a|  <-projects--   |\\a \\\\_________________/';}</style>").appendTo("head")
+            $("<style>#btn-projects-ascii pre:hover:before {content: '\\00a0________________\\a/                \\\\\\a|  <-projects--  |\\a \\\\________________/';}</style>").appendTo("head")
             a = 1;
+            $("#projects-container").fadeIn("fast");
             $('#projects-container').css('left', '40%');
         }
         else {
             $('#nav-container').css('left', '0');
-            $("<style>#btn-projects-ascii pre:hover:before {content: '\\00a0_________________\\a/                 \\\\\\a|  --projects->   |\\a \\\\_________________/';}</style>").appendTo("head")
+            $("<style>#btn-projects-ascii pre:hover:before {content: '\\00a0________________\\a/                \\\\\\a|  --projects->  |\\a \\\\________________/';}</style>").appendTo("head")
             a = 0;
+            $("#projects-container").fadeOut("fast");
             $('#projects-container').css('left', '100%');
         }
 
@@ -52,6 +56,32 @@ $(document).on("ready", function () {
             proj = 3;
         }
         changeProject(proj);
+    });
+
+    /* Opens project list */
+    $("#projects-control-seeAll-ascii").on("click", function () {
+        $("#projects-list-container").fadeIn("fast");
+        $('#projects-list-container').css('top', '25%');
+        $("#content").fadeOut("fast");
+        $('body').css('overflow-y', 'visible');
+    });
+
+    /* Closes project list*/
+    $("#projects-list-btn-back-ascii").on("click", function () {
+        $('#projects-list-container').css('top', '100%');
+        $("#projects-list-container").fadeOut("fast");
+        $('body').css('overflow-y', 'hidden');
+        $("#content").fadeIn("slow");
+    });
+
+     /* Alert about me coming soon */
+     $("#btn-aboutme-ascii").on("click", function () {
+        alert("Coming soon.");
+    });
+
+    /* Alert resume coming soon */
+    $("#btn-resume-ascii").on("click", function () {
+        alert("Coming soon.");
     });
 
 });

@@ -3,7 +3,7 @@ body {
     background-color: rgb(34, 34, 34);
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow: hidden;   
 }
 
 #page {
@@ -17,9 +17,9 @@ body {
 }
 
 /* ======= */
-/* ======= */
+/* ------- */
 /* Header */
-/* ======= */
+/* ------- */
 /* ======= */
 
 #header {
@@ -40,14 +40,17 @@ body {
 }
 
 /* ============= */
-/* ============= */
+/* ------------- */
 /* Page Content */
-/* ============= */
+/* ------------- */
 /* ============= */
 
 #content {
+    width: 100%;
+    height: 100%;
     margin-top: 5vh;
     position: relative;
+    transition: 0.5s top;
 }
 
 /*                  */
@@ -92,20 +95,22 @@ body {
 }
 
 #btn-github-ascii pre:hover:before {
-    content: "\00a0_________________\a/                 \\\a|   **github**    |\a \\_________________/";
+    content: "\00a0________________\a/                \\\a|   **github**   |\a \\________________/";
 }
 
-#btn-linkedin-ascii pre:hover:before {
-    content: "\00a0_________________\a/                 \\\a|  **linkedin**   |\a \\_________________/";
+#btn-aboutme-ascii pre:hover:before {
+    content: "\00a0________________\a/                \\\a|  **about me**  |\a \\________________/";
+    cursor: pointer;
 }
 
 #btn-projects-ascii pre:hover:before {
-    content: "\00a0_________________\a/                 \\\a|  --projects->   |\a \\_________________/";
+    content: "\00a0________________\a/                \\\a|  --projects->  |\a \\________________/";
     cursor: pointer;
 }
 
 #btn-resume-ascii pre:hover:before {
-    content: "\00a0_________________\a/                 \\\a|   **résumé**    |\a \\_________________/";
+    content: "\00a0________________\a/                \\\a|   **résumé**   |\a \\________________/";
+    cursor: pointer;
 }
 
 /*              */
@@ -193,9 +198,114 @@ body {
     font-size: 22px;
 }
 
+/*               */
+/* Project List */
+/*               */
+
+
+#projects-list-container {
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s top;
+    display: flex;
+    justify-content: center;
+}
+
+/* Project list content */
+#projects-list-title {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    margin-top: 45px;
+    text-align: center;
+    z-index: 10;
+}
+
+#projects-list-content {
+    margin-top: 240px;
+}
+
+.projects-list-content-projects {
+    transition: 0.05s;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.projects-list-content-projects:hover {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.projects-list-content-projects-content {
+    color: white;
+    z-index: 100;
+    position: absolute;
+    margin: 40px;
+    margin-top: 70px;
+}
+
+.projects-list-content-projects-content-img {
+    width: 150px;
+    height: 150px;
+    border: 1px dashed white;
+    z-index: 100;
+    float: left;
+}
+
+.projects-list-content-projects-content-info {
+    float: left;
+    margin-left: 30px;
+}
+
+.projects-list-content-projects-content-info-title {
+    font-size: 30px;
+}
+
+.projects-list-content-projects-content-info-desc {
+    font-size: 16px;
+}
+
+.projects-list-content-projects-background {
+    color: white;
+    font-size: 24px;
+    z-index: 10;
+}
+
+/* Project list return button */
+#projects-list-btn-back {
+    position: absolute;
+    color: white;
+    font-size: 16px;
+    z-index: 10;
+    margin-right: 650px;
+    margin-top: 110px; 
+}
+
+#projects-list-btn-back-ascii pre:hover span {
+    display: none;
+}
+
+#projects-list-btn-back-ascii pre:hover:before {
+    content: "\00a0____________\a/            \\\a|  **<---**  |\a \\____________/";
+    cursor: pointer;
+}
+
+/* Project list background */
+#projects-list-background {
+    z-index: -10;
+    position: absolute;
+    color: white;
+    font-size: 26px;
+    text-align: center;
+}
+
 /*            */
 /* Preloader */
 /*            */
+
+/* TODO: Fix for smaller screen sizes */
 .preload {
     overflow: hidden;
 }
@@ -217,6 +327,12 @@ body {
     font-size: 30px;
     color: white;
 }
+
+/* ============== */
+/* -------------- */
+/* Media Styling */
+/* -------------- */
+/* ============== */
 
 /* Ultra wide screen */
 @media only screen and (min-width: 2100px) {
@@ -286,7 +402,7 @@ body {
 }
 
 /* Mobile */
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1050px) {
 
     #projects-container {
         position: absolute;
