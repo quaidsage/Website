@@ -223,16 +223,42 @@ body {
 }
 
 #projects-list-content {
-    width: 900px;
     margin-top: 240px;
+}
+
+.projects-list-content-projects-content {
+    color: white;
+    z-index: 100;
     position: absolute;
-    z-index: 10;
-    text-align: Center;
+    margin: 40px;
+    margin-top: 70px;
+}
+
+.projects-list-content-projects-content-img {
+    width: 150px;
+    height: 150px;
+    border: 1px dashed white;
+    z-index: 100;
+    float: left;
+}
+
+.projects-list-content-projects-content-info {
+    float: left;
+    margin-left: 30px;
+}
+
+.projects-list-content-projects-content-info-title {
+    font-size: 20px;
+}
+
+.projects-list-content-projects-content-info-desc {
+    font-size: 16px;
 }
 
 .projects-list-content-projects-background {
     color: white;
     font-size: 24px;
+    z-index: 10;
 }
 
 /* Project list return button */
