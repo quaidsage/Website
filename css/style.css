@@ -37,6 +37,7 @@ body {
     font-size: 22px;
     color: white;
     margin: 0;
+    z-index: 100;
 }
 
 /* ============= */
@@ -69,13 +70,14 @@ body {
 
 #nav-background {
     z-index: -10;
-    font-size: 13px;
+    font-size: 14px;
     color: white;
     position: absolute;
 }
 
 #nav {
     z-index: 0;
+    margin-top: 10px;
     position: absolute;
 }
 
@@ -87,15 +89,16 @@ body {
 
 #nav a pre {
     width: 100%;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 #nav a pre:hover span {
     display: none;
 }
 
-#btn-github-ascii pre:hover:before {
-    content: "\00a0________________\a/                \\\a|   **github**   |\a \\________________/";
+#btn-projects-ascii pre:hover:before {
+    content: "\00a0________________\a/                \\\a|  **projects**  |\a \\________________/";
+    cursor: pointer;
 }
 
 #btn-aboutme-ascii pre:hover:before {
@@ -103,9 +106,8 @@ body {
     cursor: pointer;
 }
 
-#btn-projects-ascii pre:hover:before {
-    content: "\00a0________________\a/                \\\a|  --projects->  |\a \\________________/";
-    cursor: pointer;
+#btn-github-ascii pre:hover:before {
+    content: "\00a0________________\a/                \\\a|   **github**   |\a \\________________/";
 }
 
 #btn-resume-ascii pre:hover:before {
@@ -220,7 +222,7 @@ body {
     font-size: 20px;
     margin-top: 45px;
     text-align: center;
-    z-index: 10;
+    z-index: -5;
 }
 
 #projects-list-content {
@@ -229,12 +231,13 @@ body {
 
 .projects-list-content-projects {
     transition: 0.05s;
+    margin-left: 10px;
     margin-right: 10px;
     cursor: pointer;
 }
 
 .projects-list-content-projects:hover {
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 0;
 }
 
@@ -401,15 +404,14 @@ body {
     }
 }
 
-/* Mobile */
-@media only screen and (max-width: 1050px) {
-
-    #projects-container {
-        position: absolute;
+/* Tablet or Smaller Screen */
+@media only screen and (max-width: 1300px) {
+    #nav {
+        margin-top: 10px;
     }
 
     #nav a pre {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     #nav-container {
@@ -417,26 +419,11 @@ body {
     }
 
     #nav-background {
-        font-size: 11px;
+        font-size: 14px;
     }
 
     #projects-container {
         display: none;
-    }
-
-    #title pre {
-        font-size: 15px;
-    }
-}
-
-/* Tablet or Smaller Screen */
-@media only screen and (max-width: 1300px) {
-    #nav a pre {
-        font-size: 18px;
-    }
-
-    #nav-background {
-        font-size: 11px;
     }
 
     #projects-container {
@@ -478,4 +465,69 @@ body {
     #projects-background {
         font-size: 18px;
     }
+}
+
+/* Mobile */
+@media only screen and (max-width: 1050px) {
+
+    #title pre {
+        font-size: 18px;
+    }
+    
+    /* Project list content */
+    #projects-list-title {
+        font-size: 15px;
+        margin-top: 45px;
+    }
+    
+    #projects-list-content {
+        margin-top: 240px;
+    }
+    
+    .projects-list-content-projects {
+        margin-left: 10px;
+    }
+    
+    .projects-list-content-projects:hover {
+        margin-left: 14px;
+    }
+    
+    .projects-list-content-projects-content {
+        margin: 20px;
+        margin-top: 35px;
+    }
+    
+    .projects-list-content-projects-content-img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .projects-list-content-projects-content-info {
+        margin-left: 20px;
+    }
+    
+    .projects-list-content-projects-content-info-title {
+        font-size: 20px;
+    }
+    
+    .projects-list-content-projects-content-info-desc {
+        font-size: 14px;
+    }
+    
+    .projects-list-content-projects-background {
+        font-size: 13px;
+    }
+    
+    /* Project list return button */
+    #projects-list-btn-back {
+        font-size: 10px;
+        margin-right: 410px;
+        margin-top: 110px; 
+    }
+
+    /* Project list background */
+    #projects-list-background {
+        font-size: 15px;
+    }
+    
 }

@@ -24,12 +24,18 @@ $(document).on("ready", function () {
     /* Opens projects tab */
     $("#btn-projects-ascii").on("click", function () {
         if (a == 0) {
+            /* Retiring project tab for now and replace with project list 
             $('#nav-container').css('left', '-25%');
             $("<style>#btn-projects-ascii pre:hover:before {content: '\\00a0________________\\a/                \\\\\\a|  <-projects--  |\\a \\\\________________/';}</style>").appendTo("head")
             a = 1;
             $("#projects-container").fadeIn("fast");
-            $('#projects-container').css('left', '40%');
-        }
+            $('#projects-container').css('left', '40%'); */
+
+            $("#projects-list-container").fadeIn("fast");
+            $('#projects-list-container').css('top', '25%');
+            $("#content").fadeOut("fast");
+            $('body').css('overflow-y', 'visible');
+            }
         else {
             $('#nav-container').css('left', '0');
             $("<style>#btn-projects-ascii pre:hover:before {content: '\\00a0________________\\a/                \\\\\\a|  --projects->  |\\a \\\\________________/';}</style>").appendTo("head")
