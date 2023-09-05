@@ -226,6 +226,17 @@ body {
     margin-top: 240px;
 }
 
+.projects-list-content-projects {
+    transition: 0.05s;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.projects-list-content-projects:hover {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
 .projects-list-content-projects-content {
     color: white;
     z-index: 100;
@@ -248,7 +259,7 @@ body {
 }
 
 .projects-list-content-projects-content-info-title {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .projects-list-content-projects-content-info-desc {
