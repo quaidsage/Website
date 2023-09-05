@@ -68,6 +68,11 @@ $(document).on("ready", function () {
         $("#content").fadeIn("slow");
     });
 
+    /* Alert resume coming soon */
+    $("#btn-resume-ascii").on("click", function () {
+        alert("Coming soon.");
+    });
+
 });
 
 

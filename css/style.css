@@ -109,6 +109,7 @@ body {
 
 #btn-resume-ascii pre:hover:before {
     content: "\00a0_________________\a/                 \\\a|   **résumé**    |\a \\_________________/";
+    cursor: pointer;
 }
 
 /*              */
@@ -200,6 +201,7 @@ body {
 /* Project List */
 /*               */
 
+
 #projects-list-container {
     top: 100%;
     width: 100%;
@@ -210,20 +212,30 @@ body {
     justify-content: center;
 }
 
+/* Project list content */
 #projects-list-title {
     position: absolute;
     color: white;
     font-size: 20px;
-    margin-top: 40px;
+    margin-top: 45px;
     text-align: center;
     z-index: 10;
 }
 
 #projects-list-content {
+    width: 900px;
+    margin-top: 240px;
     position: absolute;
     z-index: 10;
+    text-align: Center;
 }
 
+.projects-list-content-projects-background {
+    color: white;
+    font-size: 24px;
+}
+
+/* Project list return button */
 #projects-list-btn-back {
     position: absolute;
     color: white;
@@ -242,6 +254,7 @@ body {
     cursor: pointer;
 }
 
+/* Project list background */
 #projects-list-background {
     z-index: -10;
     position: absolute;
