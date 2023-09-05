@@ -54,6 +54,13 @@ $(document).on("ready", function () {
         changeProject(proj);
     });
 
+    /* Opens project list */
+    $("#projects-control-seeAll-ascii").on("click", function () {
+        $('#projects-list-container').css('top', '25%');
+        $("#content").fadeOut("fast");
+        $('body').css('overflow-y', 'visible');
+    });
+
 });
 
 

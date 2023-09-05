@@ -3,7 +3,7 @@ body {
     background-color: rgb(34, 34, 34);
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow: hidden;   
 }
 
 #page {
@@ -17,9 +17,9 @@ body {
 }
 
 /* ======= */
-/* ======= */
+/* ------- */
 /* Header */
-/* ======= */
+/* ------- */
 /* ======= */
 
 #header {
@@ -40,14 +40,17 @@ body {
 }
 
 /* ============= */
-/* ============= */
+/* ------------- */
 /* Page Content */
-/* ============= */
+/* ------------- */
 /* ============= */
 
 #content {
+    width: 100%;
+    height: 100%;
     margin-top: 5vh;
     position: relative;
+    transition: 0.5s top;
 }
 
 /*                  */
@@ -193,9 +196,35 @@ body {
     font-size: 22px;
 }
 
+/*               */
+/* Project List */
+/*               */
+
+#projects-list-container {
+    position: relative;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s top;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+#projects-list-background {
+    z-index: -10;
+    position: absolute;
+    color: white;
+    font-size: 26px;
+    text-align: center;
+}
+
 /*            */
 /* Preloader */
 /*            */
+
+/* TODO: Fix for smaller screen sizes */
 .preload {
     overflow: hidden;
 }
@@ -217,6 +246,12 @@ body {
     font-size: 30px;
     color: white;
 }
+
+/* ============== */
+/* -------------- */
+/* Media Styling */
+/* -------------- */
+/* ============== */
 
 /* Ultra wide screen */
 @media only screen and (min-width: 2100px) {
