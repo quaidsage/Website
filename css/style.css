@@ -534,7 +534,7 @@ body {
 /* Mobile S */
 @media only screen and (max-width: 1000px) {
     #title pre {
-        font-size: 36px;
+        font-size: 30px;
         background-color: red;
     }
 
@@ -602,7 +602,7 @@ body {
     }
     
     .projects-list-content-projects-background {
-        font-size: 26px;
+        font-size: 20px;
     }
     
     /* Project list return button */
