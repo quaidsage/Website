@@ -77,6 +77,8 @@ $(document).on("ready", function () {
         $('#projects-list-container').css('top', '100%');
         $("#projects-list-container").fadeOut("fast");
         $('wrapper').css('overflow-y', 'hidden');
+        $('body').css('overflow-y', 'hidden');
+        $("html, body").animate({ scrollTop: 0 }, "slow");
         $("#content").fadeIn("slow");
     });
 
