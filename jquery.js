@@ -69,14 +69,14 @@ $(document).on("ready", function () {
         $("#projects-list-container").fadeIn("fast");
         $('#projects-list-container').css('top', '25%');
         $("#content").fadeOut("fast");
-        $('body').css('overflow-y', 'visible');
+        $('wrapper').css('overflow-y', 'visible');
     });
 
     /* Closes project list*/
     $("#projects-list-btn-back-ascii").on("click", function () {
         $('#projects-list-container').css('top', '100%');
         $("#projects-list-container").fadeOut("fast");
-        $('body').css('overflow-y', 'hidden');
+        $('wrapper').css('overflow-y', 'hidden');
         $("#content").fadeIn("slow");
     });
 
