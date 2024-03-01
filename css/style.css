@@ -65,6 +65,12 @@ main {
 /* ------------- */
 /* ============= */
 
+.gradient {
+    background: linear-gradient(130deg, #9c5ff8 40%, #fa4d88 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
 #content {
     width: 100%;
     height: 100%;
@@ -117,21 +123,26 @@ main {
 
 #btn-projects-ascii pre:hover:before {
     content: "\00a0________________\a/                \\\a|  **projects**  |\a \\________________/";
-    cursor: pointer;
 }
 
 #btn-aboutme-ascii pre:hover:before {
     content: "\00a0________________\a/                \\\a|  **about me**  |\a \\________________/";
-    cursor: pointer;
 }
 
 #btn-github-ascii pre:hover:before {
     content: "\00a0________________\a/                \\\a|   **github**   |\a \\________________/";
 }
 
-#btn-resume-ascii pre:hover:before {
-    content: "\00a0________________\a/                \\\a|   **résumé**   |\a \\________________/";
+#btn-linkedin-ascii pre:hover:before {
+    content: "\00a0________________\a/                \\\a|  **linkedin**  |\a \\________________/";
+}
+
+.navbtn pre:hover:before {
     cursor: pointer;
+}
+
+.navbtn:active {
+    color: rgb(220,220,220);
 }
 
 /*              */

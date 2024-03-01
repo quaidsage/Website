@@ -46,32 +46,6 @@ $(document).on("ready", function () {
 
     });
 
-    /* Increment project tab */
-    $("#projects-control-right-ascii").on("click", function () {
-        proj++;
-        if (proj == 4) {
-            proj = 1;
-        }
-        changeProject(proj);
-    });
-
-    /* Decrement project tab */
-    $("#projects-control-left-ascii").on("click", function () {
-        proj--;
-        if (proj == 0) {
-            proj = 3;
-        }
-        changeProject(proj);
-    });
-
-    /* Opens project list */
-    $("#projects-control-seeAll-ascii").on("click", function () {
-        $("#projects-list-container").fadeIn("fast");
-        $('#projects-list-container').css('top', '25%');
-        $("#content").fadeOut("fast");
-        $('wrapper').css('overflow-y', 'visible');
-    });
-
     /* Closes project list*/
     $("#projects-list-btn-back-ascii").on("click", function () {
         $('#projects-list-container').css('top', '100%');
@@ -82,11 +56,6 @@ $(document).on("ready", function () {
 
      /* Alert about me coming soon */
      $("#btn-aboutme-ascii").on("click", function () {
-        alert("Coming soon.");
-    });
-
-    /* Alert resume coming soon */
-    $("#btn-resume-ascii").on("click", function () {
         alert("Coming soon.");
     });
 
