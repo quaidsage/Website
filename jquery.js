@@ -26,7 +26,7 @@ $(document).on("ready", function () {
     });
 
 
-    /* Opens project showcase tab */
+    /* Opens project showcase 1 */
     $("#projects-list-content-proj1").on("click", function () {
         $("#project-showcase-container").fadeIn("fast");
         $('#project-showcase-container').css('top', '25%');
@@ -34,6 +34,32 @@ $(document).on("ready", function () {
         $("#projects-list-container").fadeOut("fast");
         $('wrapper').css('overflow-y', 'hidden');
         $("html, body").animate({ scrollTop: 0 }, "slow");
+
+        /* TODO: Set content based on showcase 1 */
+    });
+
+    /* Opens project showcase 2 */
+    $("#projects-list-content-proj2").on("click", function () {
+        $("#project-showcase-container").fadeIn("fast");
+        $('#project-showcase-container').css('top', '25%');
+        $('#projects-list-container').css('top', '100%');
+        $("#projects-list-container").fadeOut("fast");
+        $('wrapper').css('overflow-y', 'hidden');
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+
+        /* TODO: Set content based on showcase 2 */
+    });
+
+    /* Opens project showcase 3 */
+    $("#projects-list-content-proj3").on("click", function () {
+        $("#project-showcase-container").fadeIn("fast");
+        $('#project-showcase-container').css('top', '25%');
+        $('#projects-list-container').css('top', '100%');
+        $("#projects-list-container").fadeOut("fast");
+        $('wrapper').css('overflow-y', 'hidden');
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+
+        /* TODO: Set content based on showcase 3 */
     });
 
     /* Closes project showcase tab*/

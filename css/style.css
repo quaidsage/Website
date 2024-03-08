@@ -278,20 +278,30 @@ main {
 #project-showcase-content {
     z-index: 10;
     color: white;
-    margin-left: 150px;
     margin-top: 70px;
 }
 
 #project-showcase-content-title pre {
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
 }
 
 #project-showcase-content-desc pre {
     font-size: 20px;
+    margin-left: -200px;
 }
 
-/* Project shpwcase return button */
+/* Project showcase github button */
+#project-showcase-content-github-btn-ascii pre:hover span {
+    display: none;
+}
+
+#project-showcase-content-github-btn-ascii pre:hover:before {
+    content: "\00a0_________________\a/                 \\\a| **github repo** |\a \\_________________/";
+    cursor: pointer;
+}
+
+/* Project showcase return button */
 #project-showcase-btn-back {
     position: absolute;
     color: white;
