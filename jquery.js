@@ -35,8 +35,9 @@ $(document).on("ready", function () {
         $("#projects-list-container").fadeOut("fast");
         $('wrapper').css('overflow-y', 'hidden');
         $("html, body").animate({ scrollTop: 0 }, "slow");
-
-        /* TODO: Set content based on showcase 1 */
+ 
+        $("#project-showcase-content-title pre").text("Lost In Time");
+        $("#project-showcase-content-desc pre").text("The description of Lost In Time");
     });
 
     /* Opens project showcase 2 */
@@ -48,7 +49,8 @@ $(document).on("ready", function () {
         $('wrapper').css('overflow-y', 'hidden');
         $("html, body").animate({ scrollTop: 0 }, "slow");
 
-        /* TODO: Set content based on showcase 2 */
+        $("#project-showcase-content-title pre").text("OpenGL Project");
+        $("#project-showcase-content-desc pre").text("The description of OpenGL Project");
     });
 
     /* Opens project showcase 3 */
@@ -60,11 +62,12 @@ $(document).on("ready", function () {
         $('wrapper').css('overflow-y', 'hidden');
         $("html, body").animate({ scrollTop: 0 }, "slow");
 
-        /* TODO: Set content based on showcase 3 */
+        $("#project-showcase-content-title pre").text("Plagarism Checker");
+        $("#project-showcase-content-desc pre").text("The description of Plagarism Checker");
     });
 
     /* Opens project showcase 4 */
-    $("#projects-list-content-proj3").on("click", function () {
+    $("#projects-list-content-proj4").on("click", function () {
         $("#project-showcase-container").fadeIn("fast");
         $('#project-showcase-container').css('top', '25%');
         $('#projects-list-container').css('top', '100%');
@@ -72,7 +75,8 @@ $(document).on("ready", function () {
         $('wrapper').css('overflow-y', 'hidden');
         $("html, body").animate({ scrollTop: 0 }, "slow");
 
-        /* TODO: Set content based on showcase 4 */
+        $("#project-showcase-content-title pre").text("Fullstack Web Application");
+        $("#project-showcase-content-desc pre").text("The description of Fullstack Web Application");
     });
 
     /* Closes project showcase tab*/
