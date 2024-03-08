@@ -511,7 +511,7 @@ main {
     }
 
     #nav-container {
-        margin-top: -50px;
+        margin-top: -20px;
     }
 
     #nav a pre {
@@ -530,7 +530,7 @@ main {
     }
 
     #projects-list-container {
-        margin-top: -110px;
+        margin-top: -25px;
     }
 
     #projects-list-background pre {
@@ -617,7 +617,7 @@ main {
     /* Project list content */
 
     #projects-list-container {
-        margin-top: -70px;
+        margin-top: 50px;
     }
 
     #projects-list-background pre {
