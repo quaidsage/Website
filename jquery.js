@@ -2,6 +2,7 @@
 $(window).on("load", function () {
     $("#projects-list-container").hide();
     $("#projects-container").hide();
+    $("#project-showcase-container").hide();
     $(".loader-wrapper").fadeOut("slow");
     $("body").removeClass("preload");
 });
@@ -60,6 +61,18 @@ $(document).on("ready", function () {
         $("html, body").animate({ scrollTop: 0 }, "slow");
 
         /* TODO: Set content based on showcase 3 */
+    });
+
+    /* Opens project showcase 4 */
+    $("#projects-list-content-proj3").on("click", function () {
+        $("#project-showcase-container").fadeIn("fast");
+        $('#project-showcase-container').css('top', '25%');
+        $('#projects-list-container').css('top', '100%');
+        $("#projects-list-container").fadeOut("fast");
+        $('wrapper').css('overflow-y', 'hidden');
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+
+        /* TODO: Set content based on showcase 4 */
     });
 
     /* Closes project showcase tab*/

@@ -288,7 +288,6 @@ main {
 
 #project-showcase-content-desc pre {
     font-size: 20px;
-    margin-left: -200px;
 }
 
 /* Project showcase github button */
@@ -306,7 +305,7 @@ main {
     position: absolute;
     color: white;
     font-size: 16px;
-    z-index: 10;
+    z-index: 20;
     margin-right: 650px;
     margin-top: 50px;
 }
