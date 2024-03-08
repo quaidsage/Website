@@ -157,84 +157,9 @@ main {
     transition: 0.4s left;
 }
 
-/* Project tab content */
-#projects-content {
-    margin-top: 80px;
-    position: absolute;
-    width: 780px;
-    height: 100%;
-}
-
-#projects-info {
-    color: white;
-    height: 55%;
-    margin-left: 50px;
-}
-
-#projects-image img {
-    margin: 10px;
-    width: 200px;
-    float: left;
-    height: 200px;
-    border: 2px dashed white;
-}
-
-#projects-desc {
-    margin-top: 20px;
-    float: left;
-
-}
-
-#projects-desc-title {
-    font-size: 18px;
-}
-
-#projects-desc-desc {
-    font-size: 16px;
-}
-
-/* Project tab buttons */
-#projects-control {
-    text-align: center;
-}
-
-#projects-control div {
-    color: white;
-    margin: 10px;
-    font-size: 16px;
-    display: inline-block;
-}
-
-#projects-control div pre:hover span {
-    display: none;
-}
-
-#projects-control-left-ascii pre:hover:before {
-    content: "\00a0__________________\a/                  \\\a|     **<---**     |\a \\__________________/";
-    cursor: pointer;
-}
-
-#projects-control-seeAll-ascii pre:hover:before {
-    content: "\00a0_____________________\a/                     \\\a|     **see all**     |\a \\_____________________/";
-    cursor: pointer;
-}
-
-#projects-control-right-ascii pre:hover:before {
-    content: "\00a0__________________\a/                  \\\a|     **--->**     |\a \\__________________/";
-    cursor: pointer;
-}
-
-#projects-background {
-    z-index: -10;
-    position: absolute;
-    color: white;
-    font-size: 22px;
-}
-
 /*               */
 /* Project List */
 /*               */
-
 
 #projects-list-container {
     top: 100%;
@@ -349,6 +274,23 @@ main {
     justify-content: center;
 }
 
+/* Project showcase content */
+#project-showcase-content {
+    z-index: 10;
+    color: white;
+    margin-left: 150px;
+    margin-top: 70px;
+}
+
+#project-showcase-content-title pre {
+    font-size: 30px;
+    text-align: center;
+}
+
+#project-showcase-content-desc pre {
+    font-size: 20px;
+}
+
 /* Project shpwcase return button */
 #project-showcase-btn-back {
     position: absolute;
@@ -356,7 +298,7 @@ main {
     font-size: 16px;
     z-index: 10;
     margin-right: 650px;
-    margin-top: 110px;
+    margin-top: 50px;
 }
 
 #project-showcase-btn-back-ascii pre:hover span {
