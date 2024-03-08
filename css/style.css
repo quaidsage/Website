@@ -413,6 +413,9 @@ main {
 /* Ultra wide screen */
 @media only screen and (min-width: 2100px) {
 
+    #title pre {
+        color: orange;
+    }
     #nav a pre {
         font-size: 30px;
     }
@@ -479,6 +482,10 @@ main {
 
 /* Tablet or Smaller Screen */
 @media only screen and (max-width: 1300px) {
+    #title pre {
+        color: blue;
+    }
+
     #nav {
         margin-top: 10px;
     }
@@ -544,6 +551,7 @@ main {
 @media only screen and (max-width: 1050px) {
     #title pre {
         font-size: 18px;
+        color:red;
     }
 
     /* Project list content */
@@ -608,6 +616,7 @@ main {
 @media only screen and (max-width: 1000px) {
     #title pre {
         font-size: 30px;
+        color: green;
     }
 
     /* Nav */
@@ -630,16 +639,16 @@ main {
     /* Project list content */
 
     #projects-list-container {
-        margin-top: 0;
+        margin-top: -200px;
     }
 
     #projects-list-title {
-        font-size: 22px;
-        margin-top: 45px;
+        font-size: 25px;
+        margin-top: 65px;
     }
 
     #projects-list-content {
-        margin-top: 240px;
+        margin-top: 320px;
     }
 
     .projects-list-content-projects {
@@ -647,41 +656,34 @@ main {
     }
 
     .projects-list-content-projects:hover {
-        margin-left: 18px;
+        margin-left: 10px;
     }
 
     .projects-list-content-projects-content {
         margin: 40px;
         margin-top: 70px;
     }
-
-    .projects-list-content-projects-content-img {
-        width: 200px;
-        height: 200px;
-        border: 2px dashed white;
-    }
-
     .projects-list-content-projects-content-info {
         margin-left: 30px;
     }
 
     .projects-list-content-projects-content-info-title {
-        font-size: 40px;
+        font-size: 25px;
     }
 
     .projects-list-content-projects-content-info-desc {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .projects-list-content-projects-background {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     /* Project list return button */
     #projects-list-btn-back {
-        font-size: 20px;
-        margin-right: 700px;
-        margin-top: 115px;
+        font-size: 18px;
+        margin-right: 675px;
+        margin-top: 60px;
     }
 
     /* Project list background */
