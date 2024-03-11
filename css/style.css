@@ -23,7 +23,7 @@ main {
     overflow: hidden;
 }
 
-#page {
+#content {
     margin: 0 auto;
     width: 100%;
     height: 100%;
@@ -72,6 +72,7 @@ main {
     -webkit-text-fill-color: transparent;
 }
 
+/*
 #content {
     width: 100%;
     height: 100%;
@@ -79,10 +80,12 @@ main {
     position: relative;
     transition: 0.5s top;
 }
+*/
 
 /*                  */
 /* Navigation Menu */
 /*                  */
+
 #nav-container {
     width: 100%;
     height: 100%;
@@ -208,9 +211,14 @@ main {
 .projects-list-content-projects-content-img {
     width: 150px;
     height: 150px;
-    border: 1px dashed white;
     z-index: 100;
     float: left;
+}
+
+.projects-list-content-projects-content-img pre {
+    font-size: 4px;
+    border: 2px white dotted;
+    color: white;
 }
 
 .projects-list-content-projects-content-info {
@@ -372,6 +380,7 @@ main {
     #title pre {
         color: orange;
     }
+
     #nav a pre {
         font-size: 30px;
     }
@@ -507,7 +516,7 @@ main {
 @media only screen and (max-width: 1300px) {
     #title pre {
         font-size: 18px;
-        color:red;
+        color: red;
     }
 
     #nav-container {
@@ -645,7 +654,7 @@ main {
         margin: 40px;
         margin-top: 70px;
     }
-    
+
     .projects-list-content-projects-content-info {
         margin-left: 30px;
     }
