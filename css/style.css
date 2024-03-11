@@ -217,6 +217,7 @@ main {
 
 .projects-list-content-projects-content-img pre {
     font-size: 4px;
+    line-height: 4.3px;
     border: 2px white dotted;
     color: white;
 }
@@ -565,8 +566,13 @@ main {
     }
 
     .projects-list-content-projects-content-img {
-        width: 100px;
-        height: 100px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .projects-list-content-projects-content-img pre {
+        font-size: 3.45px;
+        line-height: 3.8px;
     }
 
     .projects-list-content-projects-content-info {
