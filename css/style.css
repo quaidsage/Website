@@ -217,6 +217,7 @@ main {
 
 .projects-list-content-projects-content-img pre {
     font-size: 4px;
+    line-height: 4px;
     border: 2px white dotted;
     color: white;
 }
@@ -285,23 +286,28 @@ main {
 /* Project showcase content */
 #project-showcase-content {
     z-index: 10;
+    width: 820px;
     color: white;
-    margin-top: 100px;
+    margin-top: 130px;
 }
 
 #project-showcase-content-title pre {
     font-size: 50px;
-    text-align: center;
+    margin-right: 400px;
+    font-weight: bold;
 }
 
 #project-showcase-content-desc pre {
     font-size: 20px;
+    margin-left: 30px;
+    white-space: pre-wrap;
 }
 
 /* Project showcase github button */
 #project-showcase-content-github-btn {
     font-size: 18px;
     z-index: 20;
+    float: right;
 }
 
 #project-showcase-content-github-btn-ascii pre:hover span {
@@ -565,8 +571,13 @@ main {
     }
 
     .projects-list-content-projects-content-img {
-        width: 100px;
-        height: 100px;
+        width: 110px;
+        height: 110px;
+    }
+
+    .projects-list-content-projects-content-img pre {
+        font-size: 3px;
+        line-height: 3px;
     }
 
     .projects-list-content-projects-content-info {
