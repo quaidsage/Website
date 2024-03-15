@@ -37,11 +37,14 @@ $(document).on("ready", function () {
         $("html, body").animate({ scrollTop: 0 }, "slow");
     }
 
+    /* TODO: Simplify repeated code for showcase description*/
+
     /* Opens project showcase 1 */
     $("#projects-list-content-proj1").on("click", function () {
         revealShowcase();
         $("#project-showcase-content-title pre").text("Lost In Time");
-        $("#project-showcase-content-desc pre").text("The description of Lost In Time");
+        $("#project-showcase-content-desc").append("<pre>The description of Lost In Time.</pre>");
+        $("#project-showcase-content-desc").append("<pre>More to be added...</pre>");
         $("#project-showcase-content-github-btn-ascii a").attr("href", "https://github.com/quaidsage/Lost-In-Time");
     });
 
@@ -49,21 +52,24 @@ $(document).on("ready", function () {
     $("#projects-list-content-proj2").on("click", function () {
         revealShowcase();
         $("#project-showcase-content-title pre").text("OpenGL Project");
-        $("#project-showcase-content-desc pre").text("The description of OpenGL Project");
+        $("#project-showcase-content-desc").append("<pre>The description of OpenGL Project.</pre>");
+        $("#project-showcase-content-desc").append("<pre>More to be added...</pre>");
     });
 
     /* Opens project showcase 3 */
     $("#projects-list-content-proj3").on("click", function () {
         revealShowcase();
         $("#project-showcase-content-title pre").text("Plagarism Checker");
-        $("#project-showcase-content-desc pre").text("The description of Plagarism Checker");
+        $("#project-showcase-content-desc").append("<pre>The description of Plagarism Checker.</pre>");
+        $("#project-showcase-content-desc").append("<pre>More to be added...</pre>");
     });
 
     /* Opens project showcase 4 */
     $("#projects-list-content-proj4").on("click", function () {
         revealShowcase();
         $("#project-showcase-content-title pre").text("Fullstack Web Application");
-        $("#project-showcase-content-desc pre").text("The description of Fullstack Web Application");
+        $("#project-showcase-content-desc").append("<pre>The description of Fullstack Web Application.</pre>");
+        $("#project-showcase-content-desc").append("<pre>More to be added...</pre>");
     });
 
     /* Closes project showcase tab*/
@@ -74,6 +80,7 @@ $(document).on("ready", function () {
         $('#projects-list-container').css('top', '25%');
         $("#nav-container").fadeOut("fast");
         $('body').css('overflow-y', 'visible');
+        $("#project-showcase-content-desc").empty();
     });
 
     /* Alert about me coming soon */
