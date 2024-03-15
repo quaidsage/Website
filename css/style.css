@@ -289,14 +289,14 @@ main {
     width: 820px;
     color: white;
     margin-top: 120px;
-    margin-right: 370px;
+    margin-right: 50px;
 }
 
 #project-showcase-content-title pre {
     font-size: 50px;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 #project-showcase-content-desc pre {
