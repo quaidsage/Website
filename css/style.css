@@ -390,7 +390,7 @@ main {
 @media only screen and (min-width: 2100px) {
 
     #title pre {
-        color: orange;
+        /* color: orange; */
     }
 
     #nav a pre {
@@ -460,7 +460,7 @@ main {
 /* Tablet or Smaller Screen */
 @media only screen and (max-width: 1600px) {
     #title pre {
-        color: blue;
+        /*color: blue;*/
     }
 
     #nav {
@@ -528,7 +528,7 @@ main {
 @media only screen and (max-width: 1300px) {
     #title pre {
         font-size: 18px;
-        color: red;
+        /*color: red;*/
     }
 
     #nav-container {
@@ -620,7 +620,7 @@ main {
 @media only screen and (max-width: 1000px) {
     #title pre {
         font-size: 30px;
-        color: green;
+        /* color: green; */
     }
 
     /* Nav */
