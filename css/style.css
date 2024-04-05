@@ -292,7 +292,7 @@ main {
 }
 
 #project-showcase-content-title pre {
-    font-size: 60px;
+    font-size: 55px;
     text-align: left;
     font-weight: bold;
     margin: 0;
@@ -668,12 +668,12 @@ main {
     }
 
     .projects-list-content-projects-content {
-        margin: 40px;
+        margin: 30px;
         margin-top: 70px;
     }
 
     .projects-list-content-projects-content-info {
-        margin-left: 30px;
+        margin-left: 10px;
     }
 
     .projects-list-content-projects-content-info-title {

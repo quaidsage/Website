@@ -41,7 +41,7 @@ $(document).on("ready", function () {
 
     /* Opens projects tab */
     $("#btn-projects-ascii").on("click", function () {
-        $('#projects-list-background-ascii pre span').text(createBackground(64, 51));
+        $('#projects-list-background-ascii pre span').text(createBackground(64, 55));
         $("#projects-list-container").fadeIn("fast");
         $('#projects-list-container').css('top', '25%');
         $("#nav-container").fadeOut("fast");
@@ -126,7 +126,7 @@ $(document).on("ready", function () {
 
     /* Opens project showcase 4 */
     $("#projects-list-content-proj4").on("click", function () {
-        $('#project-showcase-background-ascii pre span').text(createBackground(64, 16));
+        $('#project-showcase-background-ascii pre span').text(createBackground(66, 16));
         revealShowcase();
         $("#project-showcase-content-title").append("<pre>Fullstack Web Application</pre>");
         $("#project-showcase-content-desc").append("<pre>" +
