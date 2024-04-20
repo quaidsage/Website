@@ -1,4 +1,8 @@
 /* Author: Quaid Sage */
+* {
+    font-family: Consolas, monospace !important;
+}
+
 html {
     width: 100%;
     height: 100%;
@@ -348,7 +352,7 @@ main {
     color: white;
     font-size: 14px;
     z-index: 20;
-    margin-right: 930px;
+    margin-right: 1000px;
     margin-top: 50px;
 }
 

@@ -84,6 +84,8 @@ $(document).on("ready", function () {
             $("#project-showcase-content-desc").empty();
             $("#project-showcase-img").empty();
             $("#project-showcase-content-github-btn-ascii a").css("display", "");
+            $('#project-showcase-background-ascii2 pre span').text("");
+            $('#project-showcase-background-ascii2 pre span').text("");
         }, 100);
     });
 
@@ -92,6 +94,9 @@ $(document).on("ready", function () {
         $('#project-showcase-background-ascii pre span').text(" " + createBackground(45, 18));
         $('#project-showcase-background-ascii2 pre span').text(" " + createBackground(33, 18));
         revealShowcase();
+        $("#project-showcase-btn-back").css("margin-left", "70px");
+        $("#project-showcase-img").css("display", "");
+
         $("#project-showcase-content-title").append("<pre>Lost In Time</pre>");
         $("#project-showcase-content-desc").append("<pre>" +
             "Lost in Time is a point and click puzzle game developed that integrates the GPT-3 large language model through text based interactions in the forms of hints, story telling, and dialogue. " +
@@ -107,10 +112,13 @@ $(document).on("ready", function () {
 
     /* Opens project showcase 2 */
     $("#projects-list-content-proj2").on("click", function () {
-        $('#project-showcase-background-ascii pre span').text(createBackground(64, 16));
+        $('#project-showcase-background-ascii pre span').text(" " + createBackground(54, 12));
         revealShowcase();
+        $("#project-showcase-btn-back").css("margin-left", "400px");
+        $("#project-showcase-img").css("display", "none");
+
         $("#project-showcase-content-title").append("<pre>OpenGL Project</pre>");
-        $("#project-showcase-content-desc").append("<pre>" +
+        $("#project-showcase-content-desc").append("<pre style='width: 600px'>" +
             "A voxel-based engine developed in C++ using the OpenGL API. Currently furthering my skills in C++ and my understanding in computer graphics as a result of this project." +
             "</pre>");
         $("#project-showcase-content-github-btn-ascii a").css("display", "none");
@@ -118,22 +126,29 @@ $(document).on("ready", function () {
 
     /* Opens project showcase 3 */
     $("#projects-list-content-proj3").on("click", function () {
-        $('#project-showcase-background-ascii pre span').text(createBackground(64, 16));
+        $('#project-showcase-background-ascii pre span').text(" " + createBackground(54, 14));
         revealShowcase();
+        $("#project-showcase-btn-back").css("margin-left", "400px");
+        $("#project-showcase-img").css("display", "none");
+
         $("#project-showcase-content-title").append("<pre>Plagarism Checker</pre>");
-        $("#project-showcase-content-desc").append("<pre>" +
+        $("#project-showcase-content-desc").append("<pre style='width: 600px'>" +
             "A plagorism checker developed in Matlab utilising the Winnow algorithm to detect levels of plagrism between two pieces of text-based content. " +
             "This project served as an application for the skills I had obtained through learning the Matlab language. " +
             "</pre>");
         $("#project-showcase-content-github-btn-ascii a").attr("href", "https://github.com/quaidsage/Plagarism-Checker");
+        $("#project-showcase-content-github-btn-ascii a").css("margin-right", "-100px");
     });
 
     /* Opens project showcase 4 */
     $("#projects-list-content-proj4").on("click", function () {
-        $('#project-showcase-background-ascii pre span').text(createBackground(66, 16));
+        $('#project-showcase-background-ascii pre span').text(" " + createBackground(54, 12));
         revealShowcase();
+        $("#project-showcase-btn-back").css("margin-left", "400px");
+        $("#project-showcase-img").css("display", "none");
+
         $("#project-showcase-content-title").append("<pre>Fullstack Web Application</pre>");
-        $("#project-showcase-content-desc").append("<pre>" +
+        $("#project-showcase-content-desc").append("<pre style='width: 600px;'>" +
             "A fullstack web application built using the MERN stack in order to obtain and display data. " +
             "I am currently developing my understanding of REACT and its tools in order to bring my project ideas into fruition. " +
             "</pre>");
