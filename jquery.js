@@ -60,12 +60,14 @@ $(document).on("ready", function () {
 
     /* Hide project list and reveal project showcase */
     function revealShowcase() {
-        $("#project-showcase-container").fadeIn("fast");
-        $('#project-showcase-container').css('top', '25%');
-        $('#projects-list-container').css('top', '100%');
-        $("#projects-list-container").fadeOut("fast");
-        $('wrapper').css('overflow-y', 'hidden');
-        $("html, body").animate({ scrollTop: 0 }, "slow");
+        let scrollPos = $(document).scrollTop();
+        $("html, body").animate({ scrollTop: 0 }, scrollPos / 3, function () {
+            $('#projects-list-container').css('top', '100%');
+            $("#projects-list-container").fadeOut(100);
+            $('wrapper').css('overflow-y', 'hidden');
+            $("#project-showcase-container").fadeIn(100);
+            $('#project-showcase-container').css('top', '25%');
+        });
     }
 
     /* Closes project showcase tab*/
@@ -80,13 +82,15 @@ $(document).on("ready", function () {
         setTimeout(function () {
             $("#project-showcase-content-title").empty();
             $("#project-showcase-content-desc").empty();
+            $("#project-showcase-img").empty();
             $("#project-showcase-content-github-btn-ascii a").css("display", "");
         }, 100);
     });
 
     /* Opens project showcase 1 */
     $("#projects-list-content-proj1").on("click", function () {
-        $('#project-showcase-background-ascii pre span').text(createBackground(66, 28));
+        $('#project-showcase-background-ascii pre span').text(" " + createBackground(45, 18));
+        $('#project-showcase-background-ascii2 pre span').text(" " + createBackground(33, 18));
         revealShowcase();
         $("#project-showcase-content-title").append("<pre>Lost In Time</pre>");
         $("#project-showcase-content-desc").append("<pre>" +
@@ -96,8 +100,8 @@ $(document).on("ready", function () {
         $("#project-showcase-content-desc").append("<pre>" +
             "This was developed as a group project for a client specification for an escape room utilising latest AI technology. The project was developed in Java with use of the JavaFX platform and Scenebuilder tools. The project as a whole helped to familiarize myself with collaborative workflow and improve my version control skills in git." +
             "</pre>");
-        $("#project-showcase-content-desc").append("<img src='img/lostintime.png' style='width: 400px; height: 210px; border: 3px white dashed;'>");
-        $("#project-showcase-content-desc").append("<img src='img/lostintime2.png' style='width: 400px; height: 210px; border: 3px white dashed; margin-left: 5px;'>");
+        $("#project-showcase-img").append("<img src='img/lostintime.png' style='width: 350px; height: 185px; border: 3px white dashed; margin-bottom: 40px;' class='hoverable-img'>");
+        $("#project-showcase-img").append("<img src='img/lostintime2.png' style='width: 350px; height: 185px; border: 3px white dashed;' class='hoverable-img'>");
         $("#project-showcase-content-github-btn-ascii a").attr("href", "https://github.com/quaidsage/Lost-In-Time");
     });
 
