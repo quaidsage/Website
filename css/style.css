@@ -1,6 +1,7 @@
 /* Author: Quaid Sage */
 * {
-    font-family: Consolas, monospace !important;
+    font-family: "Inconsolata", monospace !important;
+    line-height: 120%;
 }
 
 html {
