@@ -248,3 +248,24 @@ input[type=number] {
 #home {
     width: 200px;
 }
+
+#mobileNotice {
+    display: none;
+
+}
+
+@media only screen and (max-width: 800px) {
+    #app {
+        display: none;
+    }
+
+    #mobileNotice {
+        display: block;
+        background-color: rgb(50, 50, 56);
+        color: white;
+        padding: 10px;
+        border: 1px solid darkgray;
+        box-shadow: 0 4px 10px 0px black;
+        margin-top: 10px;
+    }
+}

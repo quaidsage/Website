@@ -86,3 +86,9 @@ nav>*:hover {
     background-color: rgb(64, 64, 64);
     cursor: pointer;
 }
+
+@media only screen and (max-width: 800px) {
+    #btnSandbox {
+        display: none;
+    }
+}
