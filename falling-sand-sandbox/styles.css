@@ -137,7 +137,8 @@ body {
 
 #resetAll,
 #resetSettings,
-#githubrepo {
+#githubrepo,
+#home {
     background-color: rgb(50, 50, 56);
     border: 1px solid white;
     color: white;
@@ -151,7 +152,8 @@ body {
 
 #resetAll:hover,
 #resetSettings:hover,
-#githubrepo:hover {
+#githubrepo:hover,
+#home:hover {
     background-color: rgb(40, 40, 46);
 }
 
@@ -241,4 +243,8 @@ input[type=number] {
     margin-bottom: 10px;
     width: 100px;
 
+}
+
+#home {
+    width: 200px;
 }
