@@ -21,8 +21,8 @@ export function setupControls() {
 
     canvas.addEventListener('mousedown', function (e) {
         let rect = canvas.getBoundingClientRect();
-        mouseX = e.clientX - rect.left;
-        mouseY = e.clientY - rect.top;
+        mouseX = (e.clientX - rect.left) * (800 / canvas.clientWidth);
+        mouseY = (e.clientY - rect.top) * (800 / canvas.clientHeight);
 
         brushInterval = setInterval(() => {
             let i = Math.floor(mouseX / gridWidth);
