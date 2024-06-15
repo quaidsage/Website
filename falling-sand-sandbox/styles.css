@@ -230,6 +230,7 @@ input::-webkit-inner-spin-button {
 }
 
 input[type=number] {
+    appearance: textfield;
     -moz-appearance: textfield;
 }
 
@@ -254,7 +255,7 @@ input[type=number] {
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 960px) {
     #app {
         display: none;
     }

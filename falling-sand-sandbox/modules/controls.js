@@ -39,8 +39,8 @@ export function setupControls() {
 
     canvas.addEventListener('mousemove', function (e) {
         let rect = canvas.getBoundingClientRect();
-        mouseX = e.clientX - rect.left;
-        mouseY = e.clientY - rect.top;
+        mouseX = (e.clientX - rect.left) * (800 / canvas.clientWidth);
+        mouseY = (e.clientY - rect.top) * (800 / canvas.clientHeight);
 
         // Calculate the grid position of the mouse
         let i = Math.floor(mouseX / gridWidth);
