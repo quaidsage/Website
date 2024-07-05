@@ -9,26 +9,53 @@ body {
     user-select: none;
 }
 
-#app {
-    display: flex;
+#app {  
+    display: grid;
+    grid-template-areas: 
+        "canvas menu";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    height: 100px;
 }
 
-#container {
-    display: flex;
-    justify-content: center;
+#container { grid-area: canvas; }
+#menu { grid-area: menu; }
+
+#app>* {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
 }
 
 #canvas {
+    width: 100%;
     border: 1px solid darkgray;
 }
 
-#external {
-    margin-left: 10px;
-    height: 800px;
+#menu {
+    display: grid;
+    grid-template-areas: 
+        "btns editWindow"
+        "info info"
+        "titleCard titleCard";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.1fr;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
 }
 
-#menu {
-    display: flex;
+#editWindow { grid-area: editWindow; }
+#btns { grid-area: btns; }
+#info { grid-area: info; }
+#titleCard { grid-area: titleCard; }
+
+#menu>* {
+    width: 100%;
+    height: 100%;
 }
 
 #btns {
@@ -36,7 +63,7 @@ body {
     border: 1px solid darkgray;
     background-color: rgb(50, 50, 56);
     flex-direction: column;
-    margin-right: 10px;
+    
 }
 
 #btns>* {
@@ -44,14 +71,12 @@ body {
 }
 
 #info {
-    margin-top: 10px;
     border: 1px solid darkgray;
     background-color: rgb(50, 50, 56);
     color: white;
-    font-size: 16px;
+    font-size: 2vh;
     display: flex;
     justify-content: space-between;
-    padding: 0px 10px 0px 10px;
 }
 
 #debugOptions {
@@ -59,11 +84,9 @@ body {
 }
 
 #titleCard {
-    margin-top: 10px;
     background-color: rgb(50, 50, 56);
     color: white;
-    padding: 10px;
-    font-size: 18px;
+    font-size: 2vh;
     border: 1px solid darkgray;
     box-shadow: 0 4px 10px 0px black;
 }
@@ -75,7 +98,7 @@ body {
 #btns button {
     font-weight: bold;
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 2vh;
     box-shadow: 0 4px 10px 0px black;
 }
 
@@ -145,7 +168,7 @@ body {
     width: 120px;
     padding: 5px;
     font-family: monospace;
-    font-size: 16px;
+    font-size: 1.8vh;
     box-shadow: 0 4px 10px 0px black;
     cursor: pointer;
 }
@@ -161,7 +184,6 @@ body {
 #editWindow {
     background-color: rgb(50, 50, 56);
     border: 1px solid darkgray;
-    padding: 10px;
     color: white;
 }
 
@@ -183,7 +205,7 @@ body {
 }
 
 #editTitleWindow button {
-    font-size: 18px;
+    font-size: 2vh;
     color: white;
     background-color: rgb(50, 50, 56);
     font-weight: bold;
@@ -208,7 +230,7 @@ body {
     background-color: rgb(50, 50, 56);
     border: 1px solid white;
     font-family: monospace;
-    font-size: 14px;
+    font-size: 1.5vh;
     box-shadow: 0 4px 10px 0px black;
     margin-bottom: 10px;
     width: 100px;
@@ -239,7 +261,7 @@ input[type=number] {
     background-color: rgb(50, 50, 56);
     border: 1px solid white;
     font-family: monospace;
-    font-size: 14px;
+    font-size: 1.5vh;
     box-shadow: 0 4px 10px 0px black;
     margin-bottom: 10px;
     width: 100px;

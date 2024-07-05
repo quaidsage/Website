@@ -11,7 +11,6 @@ export function parseColor(color) {
 }
 
 export function rgbToHex(colors) {
-    console.log(colors);
     return "#" + ((1 << 24) + (colors[0] << 16) + (colors[1] << 8) + colors[2]).toString(16).slice(1);
 }
 
