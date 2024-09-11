@@ -105,6 +105,7 @@ nav>*:hover {
 
 .project-content p {
     margin: 0;
+    color: darkgray;
     padding: 0;
     font-size: 4vw;
 }
@@ -135,22 +136,24 @@ nav>*:hover {
     border: 2px solid gray;
     display: flex;
     margin: 2vw;
-    padding: 5px;
+    padding: 3vw;
     min-height: 15vw;
     margin-bottom: 3vw;
-}
-
-.contact>* {
-    margin: 0;
-    padding: 0;
+    flex-direction: column;
 }
 
 .contact h3 {
     margin: 0;
     padding: 0;
-    font-size: 6vw;
-    margin-left: 6vw;
-    align-self: center;
+    font-size: 7vw;
+    margin-bottom: 0.7vw;
+}
+
+.contact p {
+    margin: 0;
+    padding: 0;
+    font-size: 4vw;
+    color: darkgray;
 }
 
 #about {
@@ -315,13 +318,15 @@ nav>*:hover {
 
     .contact {
         border: 2px solid gray;
+        margin: 0.32rem;
         display: flex;
-        margin: 0.1rem;
-        padding: 5px;
-        min-height: 3rem;
-        margin-bottom: 1rem;
-    }
+        padding: 0.5rem;
+        min-height: 4.7rem;
 
+        margin-bottom: 0.3rem;
+        flex-direction: column;
+    }
+    
     .contact>* {
         margin: 0;
         padding: 0;
@@ -330,9 +335,14 @@ nav>*:hover {
     .contact h3 {
         margin: 0;
         padding: 0;
+        font-size: 1.6rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .contact p {
+        margin: 0;
+        padding: 0;
         font-size: 1rem;
-        margin-left: 1rem;
-        align-self: center;
     }
 }
 
@@ -371,11 +381,15 @@ nav>*:hover {
     }
 
     #about span {
-        font-size: 1.5rem;
+        font-size: 1.45rem;
     }
 
     body {
         padding-left: 15vw;
         padding-right: 15vw;
+    }
+
+    .contact h3 {
+        font-size: 2rem;
     }
 }
