@@ -7,6 +7,7 @@ function enableInputs(inputs) {
             input.disabled = false;
         }
     });
+    
 }
 
 function disableInputs(inputs) {
@@ -96,6 +97,7 @@ export function updateHTMLValues() {
         disableInputs(inputElements.values());
         return;
     }
+    
     inputElements.delete('elementName')
     inputElements.get('elementColor').value = '#' + currentElement.constructor.currentColor.map(val => Math.floor(val).toString(16).padStart(2, '0')).join('');
     inputElements.delete('elementColor');

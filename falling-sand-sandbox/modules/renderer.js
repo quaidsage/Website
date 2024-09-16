@@ -45,6 +45,11 @@ export function setGridSize(gridSize) {
 }
 
 export function start() {
+    canvas.addEventListener("touchstart",  function(event) {event.preventDefault()})
+    canvas.addEventListener("touchmove",   function(event) {event.preventDefault()})
+    canvas.addEventListener("touchend",    function(event) {event.preventDefault()})
+    canvas.addEventListener("touchcancel", function(event) {event.preventDefault()})
+
     grid.initialize(row, col);
     setupControls();
     setupConfig();

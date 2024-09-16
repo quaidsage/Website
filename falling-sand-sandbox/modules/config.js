@@ -81,6 +81,7 @@ export function setupConfig() {
     // if document width is less than 800px, set grid width to be 5
     if (document.documentElement.clientWidth < 800) {
         setGridSize(8);
+        RENDER_DELAY = 0;
     }
 }
 

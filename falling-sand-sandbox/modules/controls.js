@@ -130,11 +130,17 @@ export function setupControls() {
     currentElement = controls[storedElement]();
     document.getElementById('selected').textContent = `Selected: ${storedElement.charAt(0).toUpperCase() + storedElement.slice(1)}`;
     document.getElementById(storedElement).classList.add('button-selected');
-    updateHTMLValues();
+    
+    // Issue for apple devices when it comes to this function,
+    // so do not execute on mobile devices.
+    if (document.documentElement.clientWidth >= 800) {
+        updateHTMLValues();
+    }
 
     let storedBrushSize = localStorage.getItem('brushSize') || 4;
     brushSize = parseInt(storedBrushSize);
     document.getElementById('brush').textContent = `Brush Size: ${brushSize + 1}`;
+
 }
 
 export { currentElement, brushSize, mouseX, mouseY }

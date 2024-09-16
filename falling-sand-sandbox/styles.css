@@ -1,7 +1,6 @@
 html {
     background-color: rgb(42, 42, 48);
     font-family: monospace;
-    overscroll-behavior: none
 }
 
 body {
@@ -256,9 +255,6 @@ input[type=number] {
 }
 
 @media only screen and (max-width: 800px) {
-    html, body {
-        overflow: hidden;
-    }
 
     #container {
         margin: 0 auto;
@@ -311,6 +307,7 @@ input[type=number] {
         font-size: 3vw;
     }
 
+
     #debugOptions > * {
         margin: 10px;
     }
@@ -319,15 +316,4 @@ input[type=number] {
         flex: 1;
     }
 
-    #debugInfo {
-        display: none;
-    }
-
-    #editWindow {
-        display: none;
-    }
-
-    #titleCard { 
-        display: none;
-    }
 }
