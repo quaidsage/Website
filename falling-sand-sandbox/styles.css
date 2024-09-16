@@ -34,7 +34,6 @@ body {
 
 button {
     color: black;
-    border-radius: 0px;
 }
 
 #btns {
@@ -257,6 +256,10 @@ input[type=number] {
 }
 
 @media only screen and (max-width: 800px) {
+    html, body {
+        overflow: hidden;
+    }
+
     #container {
         margin: 0 auto;
         margin-bottom: 3vh;
@@ -290,15 +293,22 @@ input[type=number] {
     #toolbuttons button {
         font-size: 3vw;
         min-width: 12vw;
+        background-color: rgb(255, 255, 255);
+        border: 5px solid rgb(225, 225, 225);
+        border-radius: 0px;
     }
 
     #debugOptions {
-        margin: 10px 20px;
+        margin: 1vw 2vw;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
+    }
+
+    #debugOptions > * {
+        font-size: 3vw;
     }
 
     #debugOptions > * {
