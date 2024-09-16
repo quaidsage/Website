@@ -1,6 +1,7 @@
 html {
     background-color: rgb(42, 42, 48);
     font-family: monospace;
+    overscroll-behavior: none
 }
 
 body {
@@ -29,6 +30,11 @@ body {
 
 #menu {
     display: flex;
+}
+
+button {
+    color: black;
+    border-radius: 0px;
 }
 
 #btns {
@@ -277,12 +283,12 @@ input[type=number] {
     }
 
     #elementButtons button {
-        font-size: 4vw;
+        font-size: 3vw;
         min-width: 12vw;
     }
 
     #toolbuttons button {
-        font-size: 4vw;
+        font-size: 3vw;
         min-width: 12vw;
     }
 
