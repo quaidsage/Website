@@ -250,23 +250,68 @@ input[type=number] {
     width: 200px;
 }
 
-#mobileNotice {
-    display: none;
+@media only screen and (max-width: 800px) {
+    #container {
+        margin: 0 auto;
+        margin-bottom: 3vh;
+    }
 
-}
+    #container canvas {
+        width: 85vw;
+    }
 
-@media only screen and (max-width: 960px) {
     #app {
+        flex-direction: column;
+    }
+
+    #external {
+        margin: 0;
+    }
+
+    #menu {
+        min-width: 95vw;
+    }
+
+    #btns {
+        margin: 0;
+    }
+
+    #elementButtons button {
+        font-size: 4vw;
+        min-width: 12vw;
+    }
+
+    #toolbuttons button {
+        font-size: 4vw;
+        min-width: 12vw;
+    }
+
+    #debugOptions {
+        margin: 10px 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #debugOptions > * {
+        margin: 10px;
+    }
+
+    #resetAll {
+        flex: 1;
+    }
+
+    #debugInfo {
         display: none;
     }
 
-    #mobileNotice {
-        display: block;
-        background-color: rgb(50, 50, 56);
-        color: white;
-        padding: 10px;
-        border: 1px solid darkgray;
-        box-shadow: 0 4px 10px 0px black;
-        margin-top: 10px;
+    #editWindow {
+        display: none;
+    }
+
+    #titleCard { 
+        display: none;
     }
 }

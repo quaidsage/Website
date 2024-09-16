@@ -33,7 +33,39 @@ export function setupControls() {
         }, brushSpeed);
     });
 
+    canvas.addEventListener('touchstart', function (e) {
+        let rect = canvas.getBoundingClientRect();
+
+        const { touches, changedTouches } = e.originalEvent ?? e;
+        const touch = touches[0] ?? changedTouches[0];  
+
+        mouseX = (touch.pageX - rect.left) * (800 / canvas.clientWidth);
+        mouseY = (touch.pageY - rect.top) * (800 / canvas.clientHeight);
+
+        brushInterval = setInterval(() => {
+            let i = Math.floor(mouseX / gridWidth);
+            let j = Math.floor(mouseY / gridWidth);
+            if (i >= 0 && i < col && j >= 0 && j < row) {
+                grid.setBrush(i, j, currentElement);
+            }
+        }, brushSpeed);
+    });
+
+    canvas.addEventListener('touchmove', function (e) {
+        let rect = canvas.getBoundingClientRect();
+
+        const { touches, changedTouches } = e.originalEvent ?? e;
+        const touch = touches[0] ?? changedTouches[0];  
+
+        mouseX = (touch.pageX - rect.left) * (800 / canvas.clientWidth);
+        mouseY = (touch.pageY - rect.top) * (800 / canvas.clientHeight);
+    });
+
     canvas.addEventListener('mouseup', function () {
+        clearInterval(brushInterval);
+    });
+
+    canvas.addEventListener('touchend', function () {
         clearInterval(brushInterval);
     });
 
