@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         pageContainer.classList.add("pan-left");
         socialButtons.style.opacity = "0";
         setTimeout(() => {
-            window.location.href = "projects.html";
+            window.location.href = "https://quaidsage.com/projects";
         }, 800);
     });
 
