@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         pageContainer.classList.remove(...pageContainer.classList);
         pageContainer.classList.add("pan-right");
         setTimeout(() => {
-            window.location.href = "index.html";
+            window.location.href = "https://quaidsage.com";
         }, 800);
     });
 
