@@ -3,124 +3,39 @@
 
 <head>
     <title>quaidsage</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="main.js"></script>
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
 </head>
 
 <body>
-    <section id="title">
-        <img src="img/portrait.jpg">
-        <div id="textTitle">
-            <h2>welcome, i'm</h2>
-            <h1>quaidsage.</h1>
-        </div>
-    </section>
-    <div id="content">
-        <section id="menu">
-            <nav>
-                <a id="btnAbout">
-                    about
-                </a>
-                <a id="btnProjects">
-                    projects
-                </a>
-                <a id="btnContact" target="_blank">
-                    contacts
-                </a>
-                <a href="./falling-sand" id="btnSandbox">
-                    tileo demo
-                </a>
-            </nav>
+    <div id="page-container">
+        <section id="title-content">
+            <img src="img/portrait.jpg">
+            <div id="title-text">
+                <h2>welcome, i'm</h2>
+                <h1 id="title-text-name">quaidsage.|</h1>
+            </div>
         </section>
-        <div id="detail">
-            <section id="contacts">
-                <a href="https://www.linkedin.com/in/quaidsage/" target="_blank">
-                    <div class="contact">
-                        <h3>linkedin ></h3>
-                        <p>quaidsage</p>
-                    </div>
-                </a>
-                <a href="https://www.instagram.com/quaidax/" target="_blank">
-                    <div class="contact">
-                        <h3>instagram ></h3>
-                        <p>@quaidax</p>
-                    </div>
-                </a>
-                <a href="https://github.com/quaidsage" target="_blank">
-                    <div class="contact">
-                        <h3>github ></h3>
-                        <p>quaidsage</p>
-                    </div>
-                </a>
-                <a href="#" target="_blank">
-                    <div class="contact">
-                        <h3>email</h3>
-                        <p>quaidsageo@gmail.com</p>
-                    </div>
-                </a>
-            </section>
-            <section id="about">
-                <span>hi! my name is quaid and i am a penultimate software engineer student studying at university of
-                    auckland.
-                    <br><br>
-                    i have great passion in developing web apps and computer graphics. i also have great confidence in
-                    team
-                    based environments, with proven experience in leadership, team management, and communication.
-                    <br><br>
-                    outside of programming, i am likely to be improving my cooking, playing video games, going on road
-                    trips, or anything that challenges my ability to improve.
-                </span>
-            </section>
-            <section id="projects">
-                <a href="https://github.com/quaidsage/tileo" target="_blank">
-                    <div class="project">
-                        <div class="project-content">
-                            <h3>tileo</h3>
-                            <p>grid-based physics simulation built with typescript</p>
-                        </div>
-                        <img src="img/tileo.png">
-                    </div>
-                </a>
-                <a href="https://github.com/quaidsage/aether" target="_blank">
-                    <div class="project">
-                        <div class="project-content">
-                            <h3>aether</h3>
-                            <p>android app to track carbon emissions</p>
-                        </div>
-                        <img src="img/aether.png">
-                    </div>
-                </a>
-                <a href="https://github.com/quaidsage/Stacked-Success" target="_blank">
-                    <div class="project">
-                        <div class="project-content">
-                            <h3>stacked successs</h3>
-                            <p>faithful tetris clone built in javafx</p>
-                        </div>
-                        <img src="img/stacked.png">
-                    </div>
-                </a>
-                <a href="https://github.com/quaidsage/Lost-In-Time" target="_blank">
-                    <div class="project">
-                        <div class="project-content">
-                            <h3>lost in time</h3>
-                            <p>point and click adventure game with ai generated puzzles</p>
-                        </div>
-                        <img src="img/lost.gif">
-                    </div>
-                </a>
-                <a href="https://github.com/quaidsage/" target="_blank">
-                    <div class="project">
-                        <div class="project-content">
-                            <h3>view more...</h3>
-                            <p>view github repositories</p>
-                        </div>
-                    </div>
-                </a>
-            </section>
+        <div>
+            <a href="#" id="project-button">Go To Projects ></a>
         </div>
     </div>
+    <div id="social-buttons">
+        <a href="https://www.linkedin.com/in/quaidsage/" target="_blank" class="social-btn" id="linkedin-btn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:quaidsageo@gmail.com" class="social-btn" id="email-btn">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.youtube.com/@QuaidSage" target="_blank" class="social-btn" id="youtube-btn">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>
+
 </body>
+
 
 </html>

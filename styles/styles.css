@@ -1,0 +1,147 @@
+html>* {
+    font-family: monospace;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#page-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.pan-left {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+#title-content {
+    display: flex;
+    user-select: none;
+    width: 100%;
+    height: 10vw;
+    justify-content: center;
+}
+
+#title-content img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    margin-right: 2rem;
+    border: 4px dashed white;
+}
+
+#title-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    width: 30%;
+}
+
+#title-text > * {
+    margin: 0;
+}
+
+#title-text h2 {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+#title-text h1 {
+    font-size: 5vw;
+    margin-bottom: 0.5rem;
+}
+
+#project-button {
+    display: flex;
+    justify-content: center;
+    margin: 5vw auto;
+    user-select: none;
+    font-size: 1.5rem;
+}
+
+#social-buttons {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.2s ease-in-out;
+    display: flex;
+    gap: 20px;
+    opacity: 0;
+}
+
+.social-btn {
+    width: 45px;
+    background: #1e1e1e;
+    border-radius: 50%;
+    padding: 3px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+}
+
+.social-btn:hover {
+    background: #0077b5; /* Hover effect */
+}
+
+.social-btn i {
+    font-size: 24px;
+    color: #dfdfdf;
+}
+
+#linkedin-btn:hover {
+    background-color: #0077b5; /* LinkedIn blue */
+}
+
+#email-btn:hover {
+    background-color: #d44638; /* Email color */
+}
+
+#youtube-btn:hover {
+    background-color: #c4302b; /* YouTube red */
+}
+
+@media (max-width: 768px) {
+    #title-content {
+        height: 20vw;
+    }
+
+    #title-text {
+        width: 50%;
+    }
+
+    #title-text h2 {
+        font-size: 5vw;
+    }
+
+    #title-text h1 {
+        font-size: 8vw;
+    }
+
+    #project-button {
+        font-size: 1rem;
+    }
+}
