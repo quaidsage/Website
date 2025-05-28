@@ -57,7 +57,7 @@ body {
     width: 30%;
 }
 
-#title-text > * {
+#title-text>* {
     margin: 0;
 }
 
@@ -96,7 +96,7 @@ body {
     border-radius: 50%;
     padding: 3px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s ease;
+    transition: color 0.3s ease;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +104,8 @@ body {
 }
 
 .social-btn:hover {
-    background: #0077b5; /* Hover effect */
+    background: #0077b5;
+    /* Hover effect */
 }
 
 .social-btn i {
@@ -113,15 +114,18 @@ body {
 }
 
 #linkedin-btn:hover {
-    background-color: #0077b5; /* LinkedIn blue */
+    background-color: #0077b5;
+    /* LinkedIn blue */
 }
 
 #email-btn:hover {
-    background-color: #d44638; /* Email color */
+    background-color: #d44638;
+    /* Email color */
 }
 
 #youtube-btn:hover {
-    background-color: #c4302b; /* YouTube red */
+    background-color: #c4302b;
+    /* YouTube red */
 }
 
 @media (max-width: 768px) {
