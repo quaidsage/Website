@@ -53,11 +53,18 @@ body {
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
     width: 250px;
     flex-grow: 1;
     flex-basis: 250px;
     max-width: 280px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s cubic-bezier(.4, 2, .6, 1);
+}
+
+.project-card.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .project-card:hover {
