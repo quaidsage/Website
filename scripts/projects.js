@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         card.addEventListener('click', function () {
             const projectId = card.getAttribute('data-id');
             if (!projectId) return;
-            window.location.href = `project-detail.html?id=${encodeURIComponent(projectId)}`;
+            window.location.href = `project-detail?id=${encodeURIComponent(projectId)}`;
         });
 
         setTimeout(() => {

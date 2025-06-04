@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const projectButton = document.getElementById("project-button");
     const socialButtons = document.getElementById("social-buttons");
 
+    pageContainer.classList.remove("pan-left");
+
     setTimeout(() => {
         pageContainer.style.opacity = "1";
         socialButtons.style.opacity = "1";
