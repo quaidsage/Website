@@ -222,6 +222,22 @@ body {
     gap: 10px;
 }
 
+.project-detail-extra-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+.project-detail-extra-caption {
+    color: #aaa;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    text-align: center;
+    max-width: 70%;
+}
+
 .project-detail-extra-image {
     height: auto;
     width: 100%;

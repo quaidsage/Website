@@ -6,7 +6,7 @@ const projectsData = {
         img: "img/tileo.png",
         buttons: [
             { text: "GitHub", link: "https://github.com/quaidsage/tileo" },
-            { text: "Demo", link: "https://quaidsage.com/falling-sand" },
+            { text: "Demo", link: "https://quaidsage.com/tileo" },
         ],
         tags: ["TypeScript", "JavaScript", "OOP"],
         extraImages: ["img/tileo-ex.png"],
@@ -21,6 +21,15 @@ const projectsData = {
         ],
         tags: ["TypeScript", "React", "Redux", "MongoDB", "Express", "Tone.JS", "Socket.IO", "TailwindCSS", "Transformers", "WASM"],
         extraImages: ["img/mmss-track.png", "img/mmss-effect.gif"],
+    },
+    evolocity: {
+        title: "EVolocity Data Management",
+        subtitle: "A data management system for the EVolocity competition",
+        description: "This project aimed to streamline how race data is collected, processed, visualised and managed for **EVolocity** - an organisation that hosts electric vehicle racing events across New Zealand for students.\n\nWhere **EVolocity** previously faced significant operational bottlenecks through cable-based data extraction after each racing heat, our solution provides automatic wireless transmission of critical performance metrics to a centralized dashboard accessible to all race officials. This intuitive, cost-effective platform eliminates the inefficiencies that previously disrupted race schedules while delivering enhanced accuracy and comprehensive data visualization.\n\n**My Contributions:**\n\n- Designed the frontend navigation systems and general user flow, ensuring a seamless user experience.\n\n- Developed various tools for data analysis and visualization.\n\n- Extensive refactoring of backend schema and frontend components to improve performance and maintainability.\n\n- Styling and theming of the application using TailwindCSS and MUI.",
+        img: "img/evolocity.png",
+        buttons: [],
+        tags: ["React", "SQLite", "MongoDB", "Express", "TailwindCSS", "TypeScript", "Python", "FastAPI"],
+        extraImages: [{ src: "img/evolo-use.gif", caption: "Showcasing the use of the race map as a tool for visualizing location of violations caused by a team exceeding a power limit. This was implemented using Anime.js in combination with our existing data" }, { src: "img/evolo-team.png", caption: "The power violation user interface for each team" }, { src: "img/evolo-dash.png", caption: "The dashboard giving a general overview of past, future, and ongoing events" }, { src: "img/evolo-schema.png", caption: "The database schema used for storing EVolocity competition data" }],
     },
     stackedSuccess: {
         title: "Stacked Success",

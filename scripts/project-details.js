@@ -63,8 +63,20 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="project-detail-secondary">
                 <h2>Photo Gallery</h2>
                 <div class="project-detail-extra-images">
-                    ${data.extraImages ? data.extraImages.map(img => `<img src="${img}" class="project-detail-extra-image">`).join("") : ""}
-                </div>
+    ${data.extraImages
+            ? data.extraImages.map(img =>
+                typeof img === "string"
+                    ? `<div class="project-detail-extra-image-wrapper">
+                            <img src="${img}" class="project-detail-extra-image">
+                       </div>`
+                    : `<div class="project-detail-extra-image-wrapper">
+                            <img src="${img.src}" class="project-detail-extra-image">
+                            <div class="project-detail-extra-caption">${img.caption || ""}</div>
+                       </div>`
+            ).join("")
+            : ""
+        }
+</div>
             </div>
         </div>
     `;
