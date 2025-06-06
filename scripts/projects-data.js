@@ -19,7 +19,7 @@ const projectsData = {
         buttons: [
         ],
         tags: ["TypeScript", "React", "Redux", "MongoDB", "Express", "Tone.JS", "Socket.IO", "TailwindCSS", "Transformers", "WASM"],
-        extraImages: [{src: "img/mmss-track.png", caption: "Overview of the Meow Meow Silly Studio DAW Interface."}, {src: "img/mmss-effect.gif", caption: "Demonstration of adding effects and automating them within the DAW."}],
+        extraImages: [{src: "img/mmss-track.png", caption: "Overview of the Meow Meow Silly Studio DAW Interface."}, {src:"img/mmss-piano.png", caption: "Using the piano roll to sequence music."}, {src:"img/mmss-drum.png", caption:"Using the drum sequencer to create drum loops."}, {src: "img/mmss-effect.gif", caption: "Demonstration of adding effects and automating them within the DAW."}],
     },
     evolocity: {
         title: "EVolocity Data Management",
