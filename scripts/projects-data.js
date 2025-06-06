@@ -9,7 +9,7 @@ const projectsData = {
             { text: "Demo", link: "https://quaidsage.com/tileo" },
         ],
         tags: ["TypeScript", "JavaScript", "OOP"],
-        extraImages: ["img/tileo-ex.png"],
+        extraImages: [{src:"img/tileo-ex.png", caption:"Example of the Tileo sandbo interface with various elements placed in the grid."}],
     },
     mmss: {
         title: "Meow Meow Silly Studio",
@@ -20,7 +20,7 @@ const projectsData = {
             { text: "GitHub", link: "https://github.com/UOA-CS732-S1-2025/group-project-meowmeowsillycats" }
         ],
         tags: ["TypeScript", "React", "Redux", "MongoDB", "Express", "Tone.JS", "Socket.IO", "TailwindCSS", "Transformers", "WASM"],
-        extraImages: ["img/mmss-track.png", "img/mmss-effect.gif"],
+        extraImages: [{src: "img/mmss-track.png", caption: "Overview of the Meow Meow Silly Studio DAW Interface."}, {src: "img/mmss-effect.gif", caption: "Demonstration of adding effects and automating them within the DAW."}],
     },
     evolocity: {
         title: "EVolocity Data Management",
@@ -31,6 +31,17 @@ const projectsData = {
         tags: ["React", "SQLite", "MongoDB", "Express", "TailwindCSS", "TypeScript", "Python", "FastAPI"],
         extraImages: [{ src: "img/evolo-use.gif", caption: "Showcasing the use of the race map as a tool for visualizing location of violations caused by a team exceeding a power limit. This was implemented using Anime.js in combination with our existing data" }, { src: "img/evolo-team.png", caption: "The power violation user interface for each team" }, { src: "img/evolo-dash.png", caption: "The dashboard giving a general overview of past, future, and ongoing events" }, { src: "img/evolo-schema.png", caption: "The database schema used for storing EVolocity competition data" }],
     },
+    graphSchedule: {
+        title: "Graph Scheduler",
+        subtitle: "Tool for scheduling a directed acyclic graph onto processors",
+        description: "Graph Scheduler is a tool designed to schedule tasks represented as a directed acyclic graph (DAG) onto multiple processors. It aims to optimize the scheduling process by minimizing the overall execution time while adhering to dependencies between tasks. The tool provides a user-friendly interface for users to input their DAG and visualize the scheduling results.",
+        img: "img/graph.png",
+        buttons: [],
+        tags: ["Java", "JavaFX", "Graph Theory", "Algorithms"],
+        extraImages: [
+            { src: "img/graph-process.gif", caption: "A demonstration of the graph scheduling tool in action" },
+        ],
+    },
     stackedSuccess: {
         title: "Stacked Success",
         subtitle: "A faithful tetris clone built in JavaFX",
@@ -40,7 +51,7 @@ const projectsData = {
             { text: "GitHub", link: "https://github.com/quaidsage/stacked-success" }
         ],
         tags: ["Java", "JavaFX"],
-        extraImages: ["img/stacked-play.gif"],
+        extraImages: [{src: "img/stacked-play.gif", caption: "A demonstration of the game in action, showcasing the movement and rotation of the Tetrimino pieces."}],
     },
     lostTime: {
         title: "Lost In Time",
@@ -51,7 +62,7 @@ const projectsData = {
             { text: "GitHub", link: "https://github.com/quaidsage/Lost-In-Time" }
         ],
         tags: ["Java", "JavaFX", "Prompt Engineering"],
-        extraImages: ["img/lost-play.png"],
+        extraImages: [{src: "img/lost-play.png", caption: "A screenshot of the game in action, showcasing one of the puzzles in the game and how the user can interact with the AI assistant."}],
     },
     aether: {
         title: "Aether",
@@ -61,7 +72,7 @@ const projectsData = {
         buttons: [
             { text: "GitHub", link: "https://github.com/quaidsage/Aether" }
         ],
-        tags: ["Java", "Android", "Kotlin", "Firebase"],
-        extraImages: ["img/aether-use.gif"],
+        tags: ["Hackathon", "Java", "Android", "Kotlin", "Firebase"],
+        extraImages: [{src: "img/aether-use.gif", caption: "Demonstration of the app in use, and how users can track their carbon emissions."}],
     }
 };
