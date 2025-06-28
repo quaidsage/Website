@@ -9,7 +9,7 @@ const projectsData = {
             { text: "Demo", link: "https://quaidsage.com/tileo" },
         ],
         tags: ["TypeScript", "JavaScript", "OOP"],
-        extraImages: [{src:"img/tileo-ex.png", caption:"Example of the Tileo sandbo interface with various elements placed in the grid."}],
+        extraImages: [{ src: "img/tileo-ex.png", caption: "Example of the Tileo sandbo interface with various elements placed in the grid." }],
     },
     mmss: {
         title: "Meow Meow Silly Studio",
@@ -19,7 +19,7 @@ const projectsData = {
         buttons: [
         ],
         tags: ["TypeScript", "React", "Redux", "MongoDB", "Express", "Tone.JS", "Socket.IO", "TailwindCSS", "Transformers", "WASM"],
-        extraImages: [{src: "img/mmss-track.png", caption: "Overview of the Meow Meow Silly Studio DAW Interface."}, {src:"img/mmss-piano.png", caption: "Using the piano roll to sequence music."}, {src:"img/mmss-drum.png", caption:"Using the drum sequencer to create drum loops."}, {src: "img/mmss-effect.gif", caption: "Demonstration of adding effects and automating them within the DAW."}],
+        extraImages: [{ src: "img/mmss-track.png", caption: "Overview of the Meow Meow Silly Studio DAW Interface." }, { src: "img/mmss-piano.png", caption: "Using the piano roll to sequence music." }, { src: "img/mmss-drum.png", caption: "Using the drum sequencer to create drum loops." }, { src: "img/mmss-effect.gif", caption: "Demonstration of adding effects and automating them within the DAW." }],
     },
     evolocity: {
         title: "EVolocity Data Management",
@@ -45,12 +45,12 @@ const projectsData = {
         title: "Stacked Success",
         subtitle: "A faithful tetris clone built in JavaFX",
         description: "This is a project created by my team as our assignment submission for Software Engineering - Software Evolution and Maintenence assignment, based off the widely popular game, Tetris. The objective of the game is to stack blocks and create lines horizontally in order to get points.\n\n**My Contributions:**\n\n- Movement and Rotation\n\n- Changable keybindings\n\n- Line clearing\n\n- Game over detection\n\n- Collision detection\n\n- Ghost prediction\n\n- Customisable Tetrimino pieces\n\n- The translation from the back-end game logic to the JavaFX frontend.\n\n- Designed and refactored the game to be as portable / decoupled as possible from the rest of the applcation.",
-        img: "img/stacked.png",
+        img: "img/stacked.webp",
         buttons: [
             { text: "GitHub", link: "https://github.com/quaidsage/stacked-success" }
         ],
         tags: ["Java", "JavaFX"],
-        extraImages: [{src: "img/stacked-play.gif", caption: "A demonstration of the game in action, showcasing the movement and rotation of the Tetrimino pieces."}],
+        extraImages: [{ src: "img/stacked-play.gif", caption: "A demonstration of the game in action, showcasing the movement and rotation of the Tetrimino pieces." }],
     },
     lostTime: {
         title: "Lost In Time",
@@ -61,7 +61,7 @@ const projectsData = {
             { text: "GitHub", link: "https://github.com/quaidsage/Lost-In-Time" }
         ],
         tags: ["Java", "JavaFX", "Prompt Engineering"],
-        extraImages: [{src: "img/lost-play.png", caption: "A screenshot of the game in action, showcasing one of the puzzles in the game and how the user can interact with the AI assistant."}],
+        extraImages: [{ src: "img/lost-play.png", caption: "A screenshot of the game in action, showcasing one of the puzzles in the game and how the user can interact with the AI assistant." }],
     },
     aether: {
         title: "Aether",
@@ -72,6 +72,6 @@ const projectsData = {
             { text: "GitHub", link: "https://github.com/quaidsage/Aether" }
         ],
         tags: ["Hackathon", "Java", "Android", "Kotlin", "Firebase"],
-        extraImages: [{src: "img/aether-use.gif", caption: "Demonstration of the app in use, and how users can track their carbon emissions."}],
+        extraImages: [{ src: "img/aether-use.gif", caption: "Demonstration of the app in use, and how users can track their carbon emissions." }],
     }
 };
