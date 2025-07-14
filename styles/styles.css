@@ -38,6 +38,7 @@ body {
     width: 100%;
     height: 10vw;
     justify-content: center;
+    margin-bottom: 2vw;
 }
 
 #title-content img {
@@ -71,10 +72,19 @@ body {
     margin-bottom: 0.5rem;
 }
 
+#job-title {
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    font-size: 0.75vw;
+    color: #b0b0b0;
+    margin-top: 0.5rem;
+}
+
 #project-button {
     display: flex;
     justify-content: center;
-    margin: 5vw auto;
+    margin: 4vw auto;
     user-select: none;
     font-size: 1.5rem;
 }
